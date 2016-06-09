@@ -9,31 +9,9 @@ app.controller('myCtrl', function($scope) {
 	$scope.section='';
 	$scope.admissions = false;
 	$scope.careers = false;
-    /*$scope.items = ["Doctor","Electrical Engineer","Paramilitary"];
-	
-	$scope.remove = function(item){
-  		 var index = $scope.items.indexOf(item);
-  		 $scope.items.splice(index, 1);    
-	};*/
-
 });
 
-/*app.directive('autoComplete', function($timeout) {
-    return function($scope, iElement, iAttrs) {
-            iElement.autocomplete({
-                source: $scope[iAttrs.uiItems],
-                select: function() {
-                    $timeout(function() {
-                      iElement.trigger('input');
-                    }, 0);
-                }
-            });
-    };
-});*/
-
 $(document).ready(function(){
-	/*Register Form page-1 form validation */
-
 	$('#firstStepRegistration input').on('blur change', function(){
 
 		var yourFullNameText = $('#yourFullNameText');
@@ -86,17 +64,11 @@ $(document).ready(function(){
 	 	}
 	 	
 	 	$('#firstStepProgressReg .progress').css('width', finalStatus + "%");
-	 	/*$('#firstStepStarReg .update').css('width', finalStatus + '%');*/
-
 	 });
 
 	/*Career you are interested in search field*/
 	$('#careersInterestedInAdded').on('click', '.close', function(){
  		$(this).parent().remove();
- 		/*var list = $('#careersInterestedInAdded li');
- 		if(list.length == 0){
- 			$('#careersInterestedInAdded').parents('.field').find('.thumb-up img').hide();
- 		}*/
  	});
 
  	var careerConsider = {
@@ -116,7 +88,6 @@ $(document).ready(function(){
 				var value = $("#careersInterestedInText").getSelectedItemData().career;
 				var count = $('#careersInterestedInAdded > li').length +1;
 				$('#careersInterestedInAdded').append('<li class="row"><span class="pull-first"></span><span class="pull-second"></span> <span class="count">' + count + '</span><span class="text">' + value + '</span><span class="close"></span></li>');
-				/*$('#careersInterestedInAdded').parents('.field').find('.thumb-up img').show();*/
 			}
 		}
 	};
