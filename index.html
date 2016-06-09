@@ -20,7 +20,7 @@
     </head>
     <body ng-controller ="myCtrl">
         <div class="container gray-bg" id="firstStepRegistration">
-           <form name="myForm" action="">
+           <form name="myForm" action="parent-2.html">
             <header>
               <div class="logo row">
               <div class="col-6">
@@ -254,7 +254,7 @@
               </div>
               <div class="action">  
                 <!-- <button class="btn btn-primary">Continue</button> -->
-                <a href="parent_second.html" class="btn btn-primary">Continue</a>
+                <button ng-click ="myForm.$valid" class="btn btn-primary">Continue</button>
               </div>
               
               
