@@ -6,6 +6,7 @@ app.controller('myCtrl', function($scope) {
 	$scope.counsel = '';
 	$scope.school = '';
 	$scope.career ='';
+	$scope.section='';
 	$scope.admissions = false;
 	$scope.careers = false;
     /*$scope.items = ["Doctor","Electrical Engineer","Paramilitary"];
