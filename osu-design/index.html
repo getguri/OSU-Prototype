@@ -1,0 +1,291 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app= "myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Parent Connect Page | One Step Up</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/easy-autocomplete.css">
+        <link rel="stylesheet" href="css/easy-autocomplete.themes.css">
+
+    </head>
+    <body>
+        <div class="container gray-bg" id="firstStepRegistration">
+           <form name="myForm" action="">
+            <header>
+              <div class="logo row">
+              <div class="col-6">
+                <img src="img/logo.png" alt="osu logo">
+              </div>
+              <div class="col-6 f-s-30">
+              PARENT CONNECT
+              </div>
+              </div>
+              <div class="progress-bar-style row">
+                <div class="col-9">
+                  <ul class="progress-bar row">
+                <!-- Need to toggle classes (progress-started, progress-completed) -->
+                <li class="" id="firstStepProgressReg">
+                  <span class="circle start"></span>
+                  <span class="circle"></span>
+                  <span class="progress" style="width: 0%"></span>
+                </li>
+                <li class="">
+                  <span class="circle"></span>
+                  <span class="progress"></span>
+                </li>
+                <li class="">
+                  <span class="circle"></span>
+                  <span class="progress"></span>
+                </li>
+              </ul>
+                </div>
+                <div class="col-3">
+                  <span class="step-up"></span>
+                </div>
+              </div> 
+              <div class="star-progress">
+                  <div class="col-9 row">
+                    <h2>TELL US ABOUT YOURSELF</h2>
+                  <!-- <span class="star-img"><span class="update" style="width:50%"></span></span> -->
+                  </div>
+              </div> 
+            </header>
+
+            <div class="fields">
+              <div class="row field">
+                <div class="col-9">
+<div class="row field text">We would like to stay in touch with you and give you regular updates about your child as well as new information about carrers and admissions.</div>
+
+<div class="row field">We promise not to spam you - nor you will get unsolicited calls.We dont sell or rent your information to pushy salesman.please visit http://www.onestepup.in/privacy for a detailed look at our promise to keep your data safe.</div>
+                  
+                  <label for="">Your full name<span class="star">*</span></label>
+                  <input type="text" class="form-control" value="" name="name" ng-model="name" placeholder="Write your Full Name" id="yourFullNameText" required><span style="color:red" ng-show="myForm.name.$touched && myForm.name.$invalid">The name is required.</span>
+                </div>
+                <div class="thumb-up col-3">
+                  <img ng-show = "name" src="img/thumb-up.png" alt="Thumb up">
+                </div>
+              </div>
+              <div class="row field">
+                <div class="col-9">
+                  <label for="">Your Profession<span class="star">*</span></label>
+                <input type="text" class="form-control" value="" name="profession" ng-model="profession" placeholder="Write your profession" id="yourProfessionText" required><span style="color:red" ng-show="myForm.profession.$touched && myForm.profession.$invalid">The profession is required.</span>
+                </div>
+                
+                <div class="thumb-up col-3">
+                  <img ng-show = "profession" src="img/thumb-up.png" alt="Thumb up">
+                </div>
+              </div>
+              <div class="row field">
+                <div class="col-9">
+                  <label for="">Name of the student whom you'd like us to counsel<span class="star">*</span></label>
+                <input ng-focus="focusc=true;" ng-blur="blurc=true;focusc=false;" type="text" class="form-control" value="" name="counsel" ng-model="counsel" placeholder="Full Name of student" id="yourStudentText" required><span style="color:red" ng-show="myForm.counsel.$touched && myForm.counsel.$invalid">The student name is required.</span>
+                </div>
+                
+                <div class="thumb-up col-3">
+                  <img ng-show = "counsel" src="img/thumb-up.png" alt="Thumb up">
+                </div>
+              </div>
+              <div class="row field">
+             <div class="col-3">
+              <label for="classSelect">Class<span class="star">*</span></label>
+              <select id="classSelect" name="class" class="form-control" required>
+                <option disabled selected>--Select--</option>
+                <option value="xi">XI</option>
+                <option value="xii">XII</option>
+              </select><span style="color:red" ng-show="myForm.class.$touched && myForm.class.$invalid">The class is required.</span>
+            </div>
+            <div class="col-3">
+              <label for="sectionSelect">Section<span class="star">*</span></label>
+              <select id="sectionSelect" name="section" class="form-control" required>
+                <option disabled selected>--Select--</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+              </select><span style="color:red" ng-show="myForm.section.$touched && myForm.section.$invalid">The section is required.</span>
+            </div>
+                <div class="thumb-up col-3">
+                  <img ng-show = "section" src="img/thumb-up.png" alt="Thumb up"> 
+                </div>
+                </div>
+              <div class="row field">
+                <div class="col-9">
+                  <label for="">School<span class="star">*</span></label>
+                  <input type="text" class="form-control" name="school" ng-model="school" placeholder="Name of the school" id="yourSchoolText" required><span style="color:red" ng-show="myForm.school.$touched && myForm.school.$invalid">The school is required.</span>
+                </div>
+                <div class="thumb-up col-3">
+                  <img ng-show ="school" src="img/thumb-up.png" alt="Thumb up">
+                </div>
+              </div>
+              <div class="row field">
+                <div class="col-9 radio-style">
+                  <p class="label-text" for="">Your relationship with the student</p>
+                  <div><input type ="radio" name ="radio"   id ="mother" checked="true"><label for="mother"><span></span> Mother</label> <input type ="radio" name ="radio"   id ="father" ><label for="father"><span></span> Father </label><input type ="radio" name ="radio"  id ="sibling"><label for="sibling"><span></span> Older Siblings</label></div>
+                  <div><input type ="radio" name ="radio"   id ="guide"><label for="guide"><span></span>Career Guide </label><input type ="radio" name ="radio"   id ="guardian"><label for="guardian"><span></span> Guardian</label></div>
+                </div>
+                
+                <!-- <div class="thumb-up col-3">
+                  <img src="img/thumb-up.png" alt="Thumb up">
+                </div> -->
+              </div>
+              <div ng-controller ="myCtrl">
+              <div class="row field m-b-20 f-s-30">
+              <div class="col-12">
+              What would you like more information about?
+              </div>
+              </div>
+              <div class="row field m-b-20 f-s-20">
+                <div class="col-12 checkbox-style">
+                <input type = "checkbox" id="counselingCheckbox"><label for ="counselingCheckbox"><span></span>One-on-One Counseling</label>
+                </div>
+              </div> 
+              <div class="row field m-b-20 f-s-20">
+                <div class="col-12 checkbox-style">
+                <input type = "checkbox" id="collegesCheckbox" ng-model="admissions"><label for ="collegesCheckbox"><span></span>Admissions/Colleges</label>
+                </div>
+              </div>
+              <div class="row field m-b-20 f-s-20">
+                <div class="col-12 checkbox-style">
+                <input type = "checkbox" id="careersCheckbox"><label for ="careersCheckbox"><span></span>Popular Careers</label>
+                </div>
+              </div> 
+              <div class="row field m-b-20 f-s-20">
+                <div class="col-12 checkbox-style">
+                <input type = "checkbox" id="choicesCheckbox" ng-init= "careers=career" ng-model="careers"><label for ="choicesCheckbox"><span></span>Alternate career choices</label>
+                </div>
+              </div> 
+              <div class="row field m-b-20 f-s-20">
+                <div class="col-12 checkbox-style">
+                <input type = "checkbox" id="outreachCheckbox"><label for ="outreachCheckbox"><span></span>OSU Career outreach</label>
+                </div>
+              </div> 
+              <div class="row field f-s-20">
+                <div class="col-12 checkbox-style">
+                <input type = "checkbox" id="otherCheckbox"><label for ="otherCheckbox"><span></span>Other programs by OSU</label>
+                </div>
+              </div>
+              
+
+              
+              <div ng-show="admissions">
+              <div class="row field m-b-20 f-s-20">
+              <div class="col-12">
+              Please select the type of admissions you are interested in
+              </div>
+              </div>
+              <div class="row field m-b-20 f-s-20">
+                <div class="col-12 checkbox-style">
+                <input type = "checkbox" id="stateCheckbox"><label for ="stateCheckbox"><span></span>State Level</label>
+                </div>
+              </div> 
+              <div class="row field m-b-20 f-s-20">
+                <div class="col-12 checkbox-style">
+                <input type = "checkbox" id="nationalCheckbox" checked="true"><label for ="nationalCheckbox"><span></span>National Level</label>
+                </div>
+              </div>
+              <div class="row field f-s-20">
+                <div class="col-12 checkbox-style">
+                <input type = "checkbox" id="bothCheckbox"><label for ="bothCheckbox"><span></span>Both</label>
+                </div>
+              </div> 
+              </div>
+         
+              
+              <div  ng-show="careers" class="row field thumb-align" >
+              <div class="col-9">
+              <label for="careersInterestedInText">Please specify the careers you'd like to know about</label>
+              <input type="text" class="form-control" id="careersInterestedInText" placeholder="Search and select subjects" ng-model = "career">
+              <ul class="interested-List" id="careersInterestedInAdded">
+
+               <!-- <input type="text" auto-complete ui-items="items" ng-model="career" class="form-control" value="" placeholder="Search and select subjects" id="careersInterestedInText" >
+                <ul class="interested-List">
+                  <li class="row" ng-repeat="item in items"><span class="pull-up"></span><span class="pull-down down"></span><span class="count">{{$index+1}}</span>{{item}}<span class="close" ng-click ="remove(item)"></span></li>
+                </ul> -->
+                 </ul> 
+              </div>
+              <div class="thumb-up col-3">
+                  <img ng-show="career" src="img/thumb-up.png" alt="Thumb up">
+                </div> 
+              </div>
+              
+                 </div>
+
+              <div class="row field">
+                <div class="col-9 radio-style">
+                  <p class="label-text" for="">Can we follow up about these career choices by phone or email?</p>
+                <input type ="radio" name ="contact" id = "yescontact" ng-model ="cntact" value = "yes"><label for="yescontact"><span></span> Yes,Please </label><input type ="radio" name ="contact" id ="dontcontact" ng-model ="cntact" value = "no"> <label for="dontcontact"><span></span>Please don't</label>
+                </div>
+              
+                
+               <!--  <div class="thumb-up col-3">
+                  <img src="img/thumb-up.png" alt="Thumb up">
+                </div>  -->
+              </div>
+               <div ng-show ="cntact == 'yes'" class="row field">
+              <div class="col-3">
+                  <label for="">Contact Number</label>
+                  <input type="tel" class="form-control" id="name" value="" placeholder="Phone Number">
+                </div>
+                <div class="col-3">
+                  <label for="">E-Mail Address</label>
+                  <input type="email" class="form-control" id="name" value="" placeholder="youremail@domain.com">
+                </div>
+                <div class="thumb-up col-3">
+                  <!-- <img src="img/thumb-up.png" alt="Thumb up">  -->
+                </div>
+                </div>
+              <div class="row field">
+                <div class="col-9 radio-style">
+                  <p class="label-text" for="">When would be a good time to call you?</p>
+                  <div><input type ="radio" name ="time" id = "anytime" checked="true"><label for="anytime"><span></span>Any Time</label><input type ="radio" name ="time" id = "time1"><label for="time1"><span></span> 10AM - 6PM </label><input type ="radio" name ="time" id = "time2"><label for="time2"><span></span> 9AM - 1PM</label></div>
+                  <div><input type ="radio" name ="time" id = "time3"><label for="time3"><span></span>2PM - 6PM </label><input type ="radio" name ="time" id = "time4"><label for="time4"><span></span>6PM - 8PM</label></div>
+                </div>
+                
+                 <!-- <div class="thumb-up col-3">
+                  <img src="img/thumb-up.png" alt="Thumb up"> 
+                </div> -->
+              </div>
+              <div class="action">  
+                <!-- <button class="btn btn-primary">Continue</button> -->
+                <a href="parent_second.html" class="btn btn-primary">Continue</a>
+              </div>
+              
+              
+             
+              </div>
+              
+
+          </form>
+        </div>
+          <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/vendor/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js">
+        </script>
+        <script src="js/vendor/jquery.easy-autocomplete.js"></script>
+        <script src="js/main.js"></script>
+       <!--  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+       <script src="js/plugins.js"></script>
+       <script src="js/main.js"></script> -->
+       
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

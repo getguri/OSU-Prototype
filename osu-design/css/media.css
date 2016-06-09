@@ -1,0 +1,18 @@
+@media only screen and (max-width: 799px) {
+	.progress-bar .step-up { 
+		width: 100px;
+	    height: 100px;
+	    top: -20px;
+	}
+	.progress-bar .step-up:before {
+		width: 74px;
+		height: 96px;
+		background: url('../img/step-up-small.png') center center no-repeat;
+	}
+	.progress-bar .progress {
+		background: url('../img/status-bar-small.png') left center no-repeat;
+	}
+	.progress-bar .update {
+		background: url('../img/status-bar-update-small.png') left center no-repeat;
+	}
+}
