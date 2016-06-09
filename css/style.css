@@ -174,7 +174,7 @@ textarea{
 
 .progress-bar li {
     position: relative;
-    width: 33%;
+    width: 100%;
 }
 
 .progress-bar li:before {
@@ -253,6 +253,10 @@ textarea{
 .progress-started .circle.start {
     left: -4px;
     background-color: #01a4e7;
+}
+
+.progress-end .circle.end{
+  background-color:rgb(24,253,164);
 }
 
 .progress-bar .update {

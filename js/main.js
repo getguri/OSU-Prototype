@@ -66,21 +66,22 @@ $(document).ready(function(){
 
 		
 		var classVal= classSelect.val();
-		if(typeof classVal === 'string' && classVal !== ''){
-			finalStatus  += ratio;
-		}
-
 		var sectionVal= sectionSelect.val();
-		if(typeof sectionVal === 'string' && sectionVal !== ''){
+		if(typeof classVal === 'string' && classVal !== '' && typeof sectionVal === 'string' && sectionVal !== ''){
 			finalStatus  += ratio;
 		}
-	
 
 		finalStatus = Math.round(finalStatus);
 	 	if(finalStatus > 0){
 	 		$('#firstStepProgressReg').addClass('progress-started');
 	 	} else {
 	 		$('#firstStepProgressReg').removeClass('progress-started');
+	 	}
+
+	 	if(finalStatus == 100){
+	 		$('#firstStepProgressReg').addClass('progress-end');
+	 	} else {
+	 		$('#firstStepProgressReg').removeClass('progress-end');
 	 	}
 	 	
 	 	$('#firstStepProgressReg .progress').css('width', finalStatus + "%");
