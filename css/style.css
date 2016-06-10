@@ -658,3 +658,9 @@ img.ng-hide-remove {
   font-weight: 700;
   margin-bottom: 28px;
 }
+
+#secondStepParent p .code {
+  color: #0094cb;
+  text-transform: uppercase;
+  font-weight: 700;
+}
