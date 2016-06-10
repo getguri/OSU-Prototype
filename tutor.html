@@ -19,11 +19,11 @@
         <link rel="stylesheet" href="css/easy-autocomplete.themes.css"> 
         <link rel="stylesheet" href="css/bootstrap-combined.min.css">
         <link rel="stylesheet" href="https://mgcrea.github.io/angular-strap/styles/libs.min.css">
-        <link rel="stylesheet" href="css//docs.min.css">
+        <link rel="stylesheet" href="css/docs.min.css">
     </head>
     <body ng-app= "mgcrea.ngStrapDocs">
      <div class="container gray-bg" id="firstStepTutor">
-           <form name="myForm" action="tutor-2.html">
+           <form name="myForm" action="tutor2.html">
             <header>
               <div class="logo row">
               <div class="col-6">
@@ -74,7 +74,7 @@
               <div class="row field">
                 <div class="col-9 radio-style">
                   <p class="label-text">Type of course</p>
-                  <input type ="radio" ng-model ="course" name ="course"  id ="full"><label for="full"><span></span> Full Course</label><input type ="radio" name ="course"  ng-model ="course" id ="crash"><label for="crash"><span></span>Crash Course </label><input type ="radio" name ="course" ng-model ="course" id ="solving"><label for="solving"><span></span> Problem Solving</label>
+                  <input type ="radio" ng-model ="course" name ="course"  id ="full"><label class="p-r-30" for="full"><span></span> Full Course</label><input type ="radio" name ="course"  ng-model ="course" id ="crash"><label class="p-r-30" for="crash"><span></span>Crash Course </label><input type ="radio" name ="course" ng-model ="course" id ="solving"><label class="p-r-30" for="solving"><span></span> Problem Solving</label>
                 </div>
                 
                 <div class="thumb-up col-3">
@@ -146,29 +146,29 @@
                
 
               <div class="row field">
-              <div class="col-2">
+              <div class="col-3">
                <label for="">Class Duration</label>
               <div ng-controller="CounterController">
-              <input type="text" class="w49" value= {{count}}><input type='button' value='+' ng-click="increment();"><input type='button' value='-' ng-click="decrement();"></div>
+              <input type="text" class="w40" value= {{count}}><input type='button' value='+' ng-click="increment();"><input type='button' value='-' ng-click="decrement();"></div>
               </div>
               <div class="col-1">Hrs</div>
               
               
-              <div class="col-2">
+              <div class="col-3">
               <label for=""># of Classes</label>
               <div ng-controller="CounterController">
-              <input type="text" class="w49" value= {{count}}><input type='button' value='+' ng-click="increment();"><input type='button' value='-' ng-click="decrement();"></div></div>
+              <input type="text" class="w40" value= {{count}}><input type='button' value='+' ng-click="increment();"><input type='button' value='-' ng-click="decrement();"></div></div>
               <div class="col-1">per</div>
               
               
-               <div class="col-3">
+               <div class="col-2">
                <select name="" id="" class="form-control">
                     <option disabled selected>--Select--</option>
                     <option value="month">Month</option>
                     <option value="year">Year</option>
                   </select>
                </div>
-              <div class="thumb-up col-3">
+              <div class="thumb-up col-2">
                  <!--  <img src="img/thumb-up.png" alt="Thumb up"> -->
                 </div> 
               </div>
@@ -176,6 +176,7 @@
               <div class="row field m-b-115">
                
                 <div class="col-3">
+                <label for="">Class Timing</label>
                 <div ng-controller="TimepickerCtrl" ng-class="{'has-error': timepickerForm.time.$invalid}">
              
                   <input type="text" size="8" ng-model="time" name="time" bs-timepicker><i class="fa fa-clock-o"></i>
@@ -184,11 +185,11 @@
                   to
                 </div>
                 
-                <div class="col-2">
+                <div class="col-3">
                 <div ng-controller="TimepickerCtrl" ng-class="{'has-error': timepickerForm.time.$invalid}">
                   <input type="text"  size="8" ng-model="time" name="time" bs-timepicker><i class="fa fa-clock-o"></i>
                 </div></div>
-                 <div class="col-2">
+                 <div class="col-1">
                  
                  </div>
                 
@@ -199,7 +200,7 @@
               
                <div class="row field">
               <div class="col-9">
-                  <input type='button' class="tutorbtn" value='SAVE & RATE YOUR TUTOR'>
+                  <a href ="tutor2.html" class="btn tutorbtn" value=''>SAVE & RATE YOUR TUTOR</a>
                 </div>
                 <div class="thumb-up col-3">
                   <!-- <img src="img/thumb-up.png" alt="Thumb up">  -->

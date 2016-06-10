@@ -57,7 +57,7 @@ directive('btstPane', function () {
         template:
             "<div class='accordion-group' >" +
             "  <div class='accordion-heading'>" +
-            "    <i class='fa fa-plus-square-o accordion-toggle' data-toggle='collapse'>{{category.name}} -</i><i class='fa fa-edit'></i>" +
+            "    <i class='fa fa-plus-square-o f-s-20 accordion-toggle' data-toggle='collapse'>{{category.name}} -</i><span class='edit fr p-t-5 p-r-85'></span>" +
             "  </div>" +
             "<div class='accordion-body collapse'>" +
             "  <div class='accordion-inner' ng-transclude></div>" +

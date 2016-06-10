@@ -334,9 +334,13 @@ textarea{
     padding: 25px 15px 35px;
 }
 
-#secondStepTutor .fields {
+
+
+ .accordion-group{
+  width:75%;
   border: 2px solid #c3ceda;
   background-color: white;
+  margin-left: 15px;
 }
 
 .fields label {
@@ -536,6 +540,15 @@ width:300px;
 .p-r-3{
     padding-right: 3px;
 }
+.p-r-5{
+    padding-right: 5px;
+}
+.p-r-85{
+    padding-right: 85px;
+}
+.p-t-5{
+    padding-top: 5px;
+}
 
 .m-b-20{
     margin-bottom: 20px !important;
@@ -566,6 +579,10 @@ width:300px;
 .w49{
     width:49%;
 }
+.w40{
+    width:40%;
+}
+
 
 .p-b-50{
   padding-bottom: 30px;
@@ -573,9 +590,14 @@ width:300px;
 .p-r-13{
     padding-right:13px !important;
 }
-
+.p-r-30{
+  padding-right:30px !important;
+}
 .p-r-34{
   padding-right:34px !important;
+}
+.p-r-300{
+  padding-right: 1260px !important;
 }
 .checkbox-style input[type='checkbox']{
   display: none;
@@ -778,8 +800,8 @@ label .edit {
   display: inline-block;
   background: url('../img/edit.png') center center no-repeat;
   cursor: pointer;
-  padding-right:75px;
 }
+
 
 .edit-field {
   position: relative;
@@ -846,6 +868,7 @@ img.ng-hide-remove {
   color:white;
   height:50px;
   width:35%;
+  font-size:20px;
 }
 
 #firstStepTutor .tutorbtn {
@@ -853,6 +876,7 @@ img.ng-hide-remove {
   color:white;
   height:50px;
   width:45%;
+  font-size:17px;
 }
 
 #secondStepParent p .code {
