@@ -270,16 +270,6 @@ textarea{
     
 }
 
-.star-rating .star {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-}
-
-.star-rating .star polygon {
-  fill: #ddd;
-}
-
 .progress-bar-style .step-up {
     position: absolute;
     width: 170px;
@@ -342,6 +332,11 @@ textarea{
 
 .fields {
     padding: 25px 15px 35px;
+}
+
+#secondStepTutor .fields {
+  border: 2px solid #c3ceda;
+  background-color: white;
 }
 
 .fields label {
@@ -492,7 +487,7 @@ textarea{
     padding: 0 15px;
 }
 
-.btn {
+.btn1 {
   height: 50px;
   line-height: 50px;
   display: inline-block;
@@ -515,7 +510,7 @@ textarea{
     height:82px !important;
 }
 
-.btn-primary {
+.btn-primary1 {
     background-image: -moz-linear-gradient( -90deg, rgb(85,196,241) 0%, rgb(43,180,236) 47%, rgb(1,164,231) 58%, rgb(4,140,211) 100%);
     background-image: -webkit-linear-gradient( -90deg, rgb(85,196,241) 0%, rgb(43,180,236) 47%, rgb(1,164,231) 58%, rgb(4,140,211) 100%);
     background-image: -ms-linear-gradient( -90deg, rgb(85,196,241) 0%, rgb(43,180,236) 47%, rgb(1,164,231) 58%, rgb(4,140,211) 100%);
@@ -546,6 +541,11 @@ width:300px;
     margin-bottom: 20px !important;
 }
 
+.m-b-115{
+    margin-bottom: 115px !important;
+}
+
+
 .f-s-20{
     font-size: 20px !important;
 }
@@ -557,10 +557,19 @@ width:300px;
 .m-b-30{
     margin-bottom: 30px !important;
 }
+.p-l-15{
+    padding-left: 15px !important;
+}
+.p-l-30{
+    padding-left: 30px !important;
+}
+.w49{
+    width:49%;
+}
+
 .p-b-50{
   padding-bottom: 30px;
 }
-
 .p-r-13{
     padding-right:13px !important;
 }
@@ -568,31 +577,6 @@ width:300px;
 .p-r-34{
   padding-right:34px !important;
 }
-
-@keyframes myChange {
-  from {
-      opacity: 0.1;
-  } to {
-      opacity: 0.4;
-  }
-}
-
-img.ng-hide-remove {
-  animation: 2s myChange;
-}
-
-.easy-autocomplete{
-    width:712px !important;
-}
-
-.star {
-    color: red;
-    display: inline-block;
-    vertical-align: middle;
-    height: 22px;
-    line-height: 26px;
-}
-
 .checkbox-style input[type='checkbox']{
   display: none;
 }
@@ -671,11 +655,214 @@ img.ng-hide-remove {
   font-weight: 700;
   margin-bottom: 28px;
 }
+.star {
+    color: red;
+    display: inline-block;
+    vertical-align: middle;
+    height: 22px;
+    line-height: 26px;
+}
+
+.star-rating-wrap .text {
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.star-rating-radio {
+  display: inline-block;
+}
+
+.star-rating-radio label{
+  width: 27px;
+  height: 27px;
+  background: url('../img/star.png') center center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+.star-rating-radio input {
+  display: none;
+}
+
+.star-rating-radio label.active{
+  background: url('../img/active-star.png') center center no-repeat; 
+}
+
+.star-rating-radio .error {
+  text-align: right;
+}
+
+.thumb-rating-radio input {
+  display: none;
+}
+
+
+.thumb-rating-radio {
+  display: inline-block;
+}
+
+.thumb-rating-radio label{
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2px;
+  cursor: pointer;
+}
+.thumb-rating-radio .active .fa-thumbs-o-up {
+ color: rgba(11, 128, 0, 0.83)
+}
+
+.thumb-rating-radio .active .fa-thumbs-o-down {
+ color: rgba(11, 128, 0, 0.83)
+}
+
+.thumb-rating-radio .active{
+   color: rgba(11, 128, 0, 0.83)
+}
+
+
+.thumb-rating-radio .error {
+  text-align: right;
+}
+.tutor-rating  {
+  padding: 20px 15px 25px;
+  border-bottom: 2px solid #c3ceda;
+}
+.instructor-pro .text {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+}
+.instructor-rating {
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+}
+p.error {
+  color: red;
+  margin: 0;
+  font-size: 13px;
+  display: none;
+}
+#LikeAboutTutor textarea,
+#suggestyourtutor textarea {
+  height: 87px;
+}
+
+#LikeAboutTutor label,
+#suggestyourtutor label {
+  margin-bottom: 25px;
+}
+
+#gradeimprove p {
+  margin-bottom: 25px;
+}
+
+#gradeimprove label {
+  display: inline-block;
+  margin-right: 10%;
+}
+
+label .edit {
+  vertical-align: middle;
+  margin-left: 14px;
+}
+
+.edit {
+  width: 21px;
+  height: 17px;
+  display: inline-block;
+  background: url('../img/edit.png') center center no-repeat;
+  cursor: pointer;
+  padding-right:75px;
+}
+
+.edit-field {
+  position: relative;
+}
+
+.edit-field .edit {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+}
+
+[disabled='disabled']{
+    background-color: rgb(240, 244, 248);
+    box-shadow: none;
+    color: #495461;
+}
+
+@keyframes myChange {
+  from {
+      opacity: 0.1;
+  } to {
+      opacity: 0.4;
+  }
+}
+img.ng-hide-remove {
+  animation: 2s myChange;
+}
+
+#thirdStepTutor .special-msg {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px 25px;
+  margin: 0 30px;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+#thirdStepTutor .special-msg img {
+  margin-right: 35px;
+}
+
+#thirdStepTutor .special-msg p {
+    color: #8a9db2;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#thirdStepTutor {
+  padding-bottom: 60px;
+}
+
+#thirdStepTutor .special-msg p .code {
+  color: #0094cb;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#thirdStepTutor .code{
+  color: #0094cb;
+  font-weight: 700;
+}
+#secondStepTutor .tutorbtn {
+  background-color: rgba(11, 128, 0, 0.83);
+  color:white;
+  height:50px;
+  width:35%;
+}
+
+#firstStepTutor .tutorbtn {
+  background-color: rgba(11, 128, 0, 0.83);
+  color:white;
+  height:50px;
+  width:45%;
+}
 
 #secondStepParent p .code {
   color: #0094cb;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.easy-autocomplete{
+    width:712px !important;
 }
 
 .error-tooltips {
@@ -701,3 +888,4 @@ img.ng-hide-remove {
   height: 22px;
   background: url('../img/tooltip-arrow.png') center center no-repeat;
 }
+
