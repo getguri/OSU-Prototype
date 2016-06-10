@@ -557,6 +557,17 @@ width:300px;
 .m-b-30{
     margin-bottom: 30px !important;
 }
+.p-b-50{
+  padding-bottom: 30px;
+}
+
+.p-r-13{
+    padding-right:13px !important;
+}
+
+.p-r-34{
+  padding-right:34px !important;
+}
 
 @keyframes myChange {
   from {
@@ -604,7 +615,6 @@ img.ng-hide-remove {
 
 .checkbox-style label {
   color: #000000;
-  font-size: 20px;
   font-weight:400;
 }
 
@@ -619,6 +629,9 @@ img.ng-hide-remove {
 
 .radio-style input[type='radio'] + label{
   color: rgb(73, 84, 97);
+  font-size: 16px !important;
+  font-weight:normal !important;
+  padding-right: 50px;
 }
 
 .radio-style input[type='radio'] + label span {
@@ -663,4 +676,28 @@ img.ng-hide-remove {
   color: #0094cb;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.error-tooltips {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  background-color: #ffffff;
+  padding: 15px 19px;
+  border-radius: 10px;
+  border: 1px solid rgb(195, 206, 218);
+  color: red;
+  width: 195px;
+  box-sizing: border-box;
+  
+}
+
+.error-tooltips:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 13px;
+  width: 12px;
+  height: 22px;
+  background: url('../img/tooltip-arrow.png') center center no-repeat;
 }
