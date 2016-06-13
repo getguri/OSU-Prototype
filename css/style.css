@@ -926,3 +926,9 @@ img.ng-hide-remove {
   font-weight: 700;
   margin-bottom: 5px;
 }
+
+@media only screen and (min-width: 700px){
+  #firstStepRegistration .col-6.f-s-30 {
+    font-size: 20px !important;
+  }
+}
