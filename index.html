@@ -62,29 +62,33 @@
 <div class="row field">We promise not to spam you - nor you will get unsolicited calls.We dont sell or rent your information to pushy salesman.please visit http://www.onestepup.in/privacy for a detailed look at our promise to keep your data safe.</div>
                   
                   <label for="">Your full name<span class="star">*</span></label>
-                  <input type="text" class="form-control" value="" name="name" ng-model="name" placeholder="Write your Full Name" id="yourFullNameText" required><span style="color:red" ng-show="myForm.name.$touched && myForm.name.$invalid">The name is required.</span>
+                  <input type="text" class="form-control" value="" name="name" ng-model="name" placeholder="Write your Full Name" id="yourFullNameText" required>
                 </div>
-                <div class="thumb-up col-3">
+                <div class="thumb-up col-3" style="position:relative">
+                  <p class="error-tooltips" ng-show="myForm.name.$touched && myForm.name.$invalid"><span> Your name</span>Enter first & last name</p>
                   <img ng-show = "name" src="img/thumb-up.png" alt="Thumb up">
+                  
                 </div>
               </div>
               <div class="row field">
                 <div class="col-9">
                   <label for="">Your Profession<span class="star">*</span></label>
-                <input type="text" class="form-control" value="" name="profession" ng-model="profession" placeholder="Write your profession" id="yourProfessionText" required><span style="color:red" ng-show="myForm.profession.$touched && myForm.profession.$invalid">The profession is required.</span>
+                <input type="text" class="form-control" value="" name="profession" ng-model="profession" placeholder="Write your profession" id="yourProfessionText" required>
                 </div>
                 
-                <div class="thumb-up col-3">
+                <div class="thumb-up col-3" style="position:relative">
+                <p class="error-tooltips" ng-show="myForm.profession.$touched && myForm.profession.$invalid"><span>Profession</span>Enter name of your profession</p>
                   <img ng-show = "profession" src="img/thumb-up.png" alt="Thumb up">
                 </div>
               </div>
               <div class="row field">
                 <div class="col-9">
                   <label for="">Name of the student whom you'd like us to counsel<span class="star">*</span></label>
-                <input ng-focus="focusc=true;" ng-blur="blurc=true;focusc=false;" type="text" class="form-control" value="" name="counsel" ng-model="counsel" placeholder="Full Name of student" id="yourStudentText" required><span style="color:red" ng-show="myForm.counsel.$touched && myForm.counsel.$invalid">The student name is required.</span>
+                <input type="text" class="form-control" value="" name="counsel" ng-model="counsel" placeholder="Full Name of student" id="yourStudentText" required>
                 </div>
                 
-                <div class="thumb-up col-3">
+                <div class="thumb-up col-3" style="position:relative">
+                   <p class="error-tooltips" ng-show="myForm.counsel.$touched && myForm.counsel.$invalid"><span>Student</span>Enter name of the student</p>
                   <img ng-show = "counsel" src="img/thumb-up.png" alt="Thumb up">
                 </div>
               </div>
@@ -95,7 +99,7 @@
                 <option disabled selected>--Select--</option>
                 <option value="xi">XI</option>
                 <option value="xii">XII</option>
-              </select><span style="color:red" ng-show="myForm.class.$touched && myForm.class.$invalid">The class is required.</span>
+              </select>
             </div>
             <div class="col-3">
               <label for="sectionSelect">Section<span class="star">*</span></label>
@@ -103,18 +107,21 @@
                 <option disabled selected>--Select--</option>
                 <option value="a">A</option>
                 <option value="b">B</option>
-              </select><span style="color:red" ng-show="myForm.section.$touched && myForm.section.$invalid">The section is required.</span>
+              </select>
             </div>
-                <div class="thumb-up col-3">
+                <div class="thumb-up col-3" style="position:relative">
+              <p class="error-tooltips" ng-show="myForm.section.$touched && myForm.section.$invalid"><span>Class,Section</span>Select class,section</p>
                   <img ng-show = "section" src="img/thumb-up.png" alt="Thumb up"> 
                 </div>
                 </div>
               <div class="row field">
                 <div class="col-9">
                   <label for="">School<span class="star">*</span></label>
-                  <input type="text" class="form-control" name="school" ng-model="school" placeholder="Name of the school" id="yourSchoolText" required><span style="color:red" ng-show="myForm.school.$touched && myForm.school.$invalid">The school is required.</span>
+                  <input type="text" class="form-control" value="" name="school" ng-model="school" placeholder="Name of the school" id="yourSchoolText" required>
                 </div>
-                <div class="thumb-up col-3">
+                <div class="thumb-up col-3" style="position:relative">
+              <p class="error-tooltips" ng-show="myForm.school.$touched && myForm.school.$invalid">
+              <span>School</span>Enter name of your school</p>
                   <img ng-show ="school" src="img/thumb-up.png" alt="Thumb up">
                 </div>
               </div>
@@ -268,6 +275,8 @@
         <script src="https://mgcrea.github.io/angular-strap/docs/angular-strap.docs.tpl.js" data-semver="v2.3.8"></script>
         <script src="js/vendor/jquery.easy-autocomplete.js"></script>
         <script src="js/main.js"></script>
+        
+    
        <!--  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
        <script src="js/plugins.js"></script>

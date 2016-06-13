@@ -891,16 +891,19 @@ img.ng-hide-remove {
 
 .error-tooltips {
   position: absolute;
-  top: 0;
-  right: 50px;
+  top: -50px;
+  left: 0;
   background-color: #ffffff;
   padding: 15px 19px;
   border-radius: 10px;
   border: 1px solid rgb(195, 206, 218);
   color: red;
-  width: 195px;
+  font-size: 13px;
+  width: 100%;
   box-sizing: border-box;
-  
+  /*display: none;*/
+  margin: 0;
+  min-height: 48px;
 }
 
 .error-tooltips:before {
@@ -913,3 +916,13 @@ img.ng-hide-remove {
   background: url('../img/tooltip-arrow.png') center center no-repeat;
 }
 
+.error-tooltips span{
+  padding-left: 25px;
+  background: url('../img/info.png') left center no-repeat;
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  color: #8a9db2;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
