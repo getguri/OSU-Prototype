@@ -935,10 +935,24 @@ img.ng-hide-remove {
     padding-right: 0 !important;
     font-size:12px !important;
   }
-  .easy-autocomplete{
-    width:356px !important;
+  
 }
 
+@media only screen and (max-width: 800px){
+#firstStepTutor .easy-autocomplete{
+    width:356px !important;
+}
+#firstStepTutor .tutorbtn {
+    height:40px;
+    font-size:11px;
+ } 
+  #firstStepTutor .p-r-85{
+    padding-right:140px !important;
+ }
+}  
+
+.easy-autocomplete{
+    width:474px !important;
 }
 
 .counts, .count {

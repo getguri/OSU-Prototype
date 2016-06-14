@@ -75,11 +75,11 @@
               <div class="row field">
                 <div class="col-9 radio-style">
                   <p class="label-text">Type of course<span class="star">*</span></p>
-                  <input type ="radio" ng-model ="course" name ="course"  id ="full"><label class="p-r-30" for="full"><span></span> Full Course</label><input type ="radio" name ="course"  ng-model ="course" id ="crash"><label class="p-r-30" for="crash"><span></span>Crash Course </label><input type ="radio" name ="course" ng-model ="course" id ="solving"><label class="p-r-30" for="solving"><span></span> Problem Solving</label>
+                <input type ="radio" ng-model ="course" name ="course" value= "full" ng-checked="true" id ="full"><label class="p-r-30" for="full"><span></span> Full Course</label><input type ="radio" name ="course"  ng-model ="course" value= "crash" id ="crash"><label class="p-r-30" for="crash"><span></span>Crash Course </label><input type ="radio" name ="course" ng-model ="course" value = "problem" id ="solving"><label class="p-r-30" for="solving"><span></span> Problem Solving</label>
                 </div>
                 
                 <div class="thumb-up col-3">
-                  <img ng-show ="course" src="img/thumb-up.png" alt="Thumb up">
+                  <img ng-show = "course=='full'||course=='crash'||course=='problem'" src="img/thumb-up.png" alt="Thumb up">
                 </div>
               </div>
               <div class="row field thumb-align">
@@ -97,10 +97,10 @@
               <div class="row field">
               <div class="col-9 radio-style">
                  <p class="label-text">Where do you study?<span class="star">*</span></p>
-                  <input type ="radio" ng-model ="location" name ="location" id ="home"> <label for="home"><span></span>Home</label><input type ="radio" ng-model ="location" name ="location" id="center"><label for="center"><span></span> Center</label> 
+                  <input type ="radio" ng-model ="location" name ="location" ng-checked="true" value= "home" id ="home"> <label for="home"><span></span>Home</label><input type ="radio" ng-model ="location" name ="location" value= "center" id="center"><label for="center"><span></span> Center</label> 
                 </div>
                 <div class="thumb-up col-3">
-                  <img ng-show ="location" src="img/thumb-up.png" alt="Thumb up"> 
+                  <img ng-show ="location=='home'||location=='center'" src="img/thumb-up.png" alt="Thumb up"> 
                 </div>
                 </div>
               <div class="row field thumb-align">

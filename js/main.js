@@ -87,7 +87,9 @@ app.controller('CounterController', function($scope) {
   };
 
 }).controller('TimepickerCtrl', function($scope) {
-  $scope.time = new Date(1970, 0, 1, 10, 30, 40);
+  $scope.time = new Date();
+  var d = $scope.time;
+  $scope.time1 = d.setMinutes(d.getMinutes() + 90);
 }).controller('myCtrl', function($scope) {
 	$scope.name = '';
 	$scope.career ='';
