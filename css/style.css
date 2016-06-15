@@ -573,8 +573,14 @@ width:300px;
 .p-l-15{
     padding-left: 15px !important;
 }
+.p-l-20{
+    padding-left: 20px !important;
+}
 .p-l-30{
     padding-left: 30px !important;
+}
+.p-l-46{
+    padding-left: 46px !important;
 }
 .w49{
     width:49%;
@@ -583,8 +589,10 @@ width:300px;
     width:40%;
 }
 
-
-.p-b-50{
+.p-b-10{
+  padding-bottom: 10px;
+}
+.p-b-30{
   padding-bottom: 30px;
 }
 .p-r-13{
