@@ -154,17 +154,17 @@
                 </div>
               </div>
                
-
+              <div ng-controller="CountController">
               <div class="row field">
               <div class="col-2">
                <label for="">Class Duration</label>
-              <div ng-controller="CounterController">
+              
               <div class="counterBox">
-              <div class="counts look-like-input textfield" contenteditable>{{count}}</div> 
+              <div class="counts look-like-input textfield" contenteditable>{{count1}}</div> 
               <div class="count">
               <div ><input  class="plus" type='button' ng-click="increment();" value='+'></div>
               <div ><input  class="minus" type='button' ng-click="decrement();" value='-'></div>
-              </div></div></div>
+              </div></div>
               </div>
               <div class="col-1">Hrs</div>
               
@@ -198,7 +198,7 @@
                
                 <div class="col-3">
                 <label for="">Class Timing</label>
-                <div ng-controller="TimepickerCtrl" ng-class="{'has-error': timepickerForm.time.$invalid}">
+                <div ng-class="{'has-error': timepickerForm.time.$invalid}">
              
                   <input type="text" class="clock" size="8" ng-model="time" name="time" bs-timepicker>
                 </div></div>
@@ -207,7 +207,7 @@
                 </div>
                 
                 <div class="col-3">
-                <div ng-controller="TimepickerCtrl" ng-class="{'has-error': timepickerForm.time.$invalid}">
+                <div ng-class="{'has-error': timepickerForm.time.$invalid}">
                   <input type="text"  class="clock" size="8" ng-model="time1" name="time" bs-timepicker>
                 </div></div>
                  <div class="col-1">
@@ -217,7 +217,7 @@
                <div class="thumb-up col-3">
                   <!-- <img src="img/thumb-up.png" alt="Thumb up"> -->
                 </div>  
-              </div>
+              </div></div>
               
                <div class="row field">
               <div class="col-9">

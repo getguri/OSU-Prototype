@@ -77,19 +77,92 @@ app.controller('CounterController', function($scope) {
 
   $scope.count = 0;
   
+  
   $scope.increment = function() {
     if ($scope.count >= 15 ) { return; }
     $scope.count++;
+    if($scope.number.length = 1){
+        $scope.count = 0 + $scope.count;
+    }
   };
   $scope.decrement = function() {
     if ($scope.count <= 0) { return; }
     else $scope.count--;
+    if($scope.number.length = 1){
+        $scope.count = 0 + $scope.count;
+    }
   };
-
-}).controller('TimepickerCtrl', function($scope) {
+}).controller('CountController', function($scope) {
+  $scope.count1 = 0;
+  $scope.totime = 0;
   $scope.time = new Date();
-  var d = $scope.time;
-  $scope.time1 = d.setMinutes(d.getMinutes() + 90);
+  $scope.time1 = new Date();
+  
+  $scope.increment = function() {
+   
+    if ($scope.count1 >= 15 ) { return; }
+    $scope.count1++;
+    $scope.counter();
+  };
+  $scope.decrement = function() {
+    if ($scope.count1 <= 0) { return; }
+    else $scope.count1--;
+    $scope.counter(); 
+  };
+  
+ $scope.counter = function() {
+    if($scope.count1 == 0){
+        $scope.totime = 0;
+        $scope.calctime();
+    }
+    else if($scope.count1 == 1){
+        $scope.totime = 60;
+        $scope.calctime();
+    }
+    else if ($scope.count1 == 2)
+    {
+        $scope.totime =120;
+        $scope.calctime(); 
+    }
+    else if ($scope.count1 == 3)
+    {
+        $scope.totime =180;
+        $scope.calctime(); 
+    }
+    else if ($scope.count1 == 4)
+    {
+        $scope.totime =240;
+        $scope.calctime(); 
+    }
+    else if ($scope.count1 == 5)
+    {
+        $scope.totime =300;
+        $scope.calctime(); 
+    }
+     else if ($scope.count1 == 6)
+    {
+        $scope.totime =360;
+        $scope.calctime(); 
+    }
+    else if ($scope.count1 == 7)
+    {
+        $scope.totime =420;
+        $scope.calctime(); 
+    }
+    else if ($scope.count1 == 8)
+    {
+        $scope.totime =480;
+        $scope.calctime(); 
+    }
+   }; 
+
+ $scope.calctime = function() {
+        $scope.time = new Date();
+        var d = $scope.time;
+        $scope.time1 = d.setMinutes(d.getMinutes() + $scope.totime);
+        $scope.time = new Date();  
+   };  
+   
 }).controller('myCtrl', function($scope) {
 	$scope.name = '';
 	$scope.career ='';
@@ -102,6 +175,7 @@ app.controller('CounterController', function($scope) {
     $scope.section='';
     $scope.admissions = false;
     $scope.careers = false;
+    //$scope.counter = 0;
 });
 
 

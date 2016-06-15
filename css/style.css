@@ -343,6 +343,9 @@ textarea{
   margin-left: 15px;
 }
 
+.accordion-inner{
+background-color: #f3f6f9;
+}
 .fields label {
     /*display: block;*/
     font-size: 16px;
