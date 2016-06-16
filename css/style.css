@@ -344,7 +344,7 @@ textarea{
 }
 
 .accordion-inner{
-background-color: #f3f6f9;
+  background-color: #f7f9fb;
 }
 .fields label {
     /*display: block;*/
@@ -765,15 +765,15 @@ width:300px;
   cursor: pointer;
 }
 .thumb-rating-radio .active .fa-thumbs-o-up {
- color: rgba(11, 128, 0, 0.83)
+ color:#64bd8c;
 }
 
 .thumb-rating-radio .active .fa-thumbs-o-down {
- color: rgba(11, 128, 0, 0.83)
+ color:#64bd8c;
 }
 
 .thumb-rating-radio .active{
-   color: rgba(11, 128, 0, 0.83)
+   color:#64bd8c;
 }
 
 
@@ -894,7 +894,7 @@ img.ng-hide-remove {
   font-weight: 700;
 }
 #secondStepTutor .tutorbtn {
-  background-color: rgba(11, 128, 0, 0.83);
+  background-color:#64bd8c;
   color:white;
   height:50px;
   width:35%;
@@ -902,7 +902,7 @@ img.ng-hide-remove {
 }
 
 #firstStepTutor .tutorbtn {
-  background-color: rgba(11, 128, 0, 0.83);
+  background-color:#64bd8c;
   color:white;
   height:50px;
   width:45%;
@@ -1021,11 +1021,11 @@ img.ng-hide-remove {
 
 #firstStepTutor .plus{
   width:100%;
-  background-color:skyblue;
+  background-color: #01a4e7;
 }
 #firstStepTutor .minus{
   width:100%;
-  background-color:lightgrey;
+  background-color:#bdbdbd;
 }
 
 #firstStepTutor .clock {

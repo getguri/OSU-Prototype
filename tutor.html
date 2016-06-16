@@ -42,17 +42,17 @@
               </div>
           </header>
             <btst-accordion>
-              <btst-pane title="PERSONAL DETAILS"  category="{name:'test'}">
+              <btst-pane class="contents" title="PERSONAL DETAILS"  category="{name:'test'}">
                 <div class="f-s-20 p-b-10"><span><b>Class and Section </b> XI A</span><span class="p-l-30"><b>School </b> Gyan Bharati School</span></div>
                 <div class="f-s-20 p-b-10"><span><b>Roll Number </b> <span style="padding-left:53px">32</span></span><span class="p-l-46"><b>Email </b><span style="padding-left:15px"> shash@srijan.in</span></span></div>
                 <div class="f-s-20 p-b-10"><span><b>Mom </b> <span style="padding-left:37px">Neerja Bhullar</span></span><span class="p-l-30"><b>Dad </b> <span style="padding-left:30px">Sulakhhan Pandey</span></span></div>
                 <div class="f-s-20 p-b-10"><span><b>Email </b> neerja@gmail.com</span><span class="p-l-20"><b>Email </b> supandey@gmail.com</span></div>
                 <div class="f-s-20 p-b-10"><span><b>Phone </b> <span style="padding-left:30px">01129898292</span></span><span class="p-l-30"><b>Phone </b> +91-9898989898</span></div>
               </btst-pane>
-              <btst-pane title="ACADEMIC DETAILS">
+              <btst-pane class="contents" title="ACADEMIC DETAILS">
                 <div></div>
               </btst-pane>
-            <btst-pane title="TUTOR">
+            <btst-pane class="contents" title="TUTOR">
             <div class="fields">
             <div ng-controller="myCtrl">
              <!-- <label class="field p-l-15"  style="display:block" for="">TUTOR</label> -->  
@@ -60,7 +60,7 @@
              
               <div class="col-3"> 
               <label for="">Salutation<span class="star">*</span></label>
-              <select name="salutation" id="" class="form-control" required>
+              <select name="salutation" id="" class="form-control" disabled="disabled" required>
                     <option disabled selected>--Select--</option>
                     <option value="XI">Mr.</option>
                     <option value="XII">Mrs.</option>
@@ -69,7 +69,7 @@
                 <div class="col-6"> 
                                
                   <label for="">Full Name<span class="star">*</span></label>
-                  <input type="text" class="form-control" id="name" name = "name" ng-model ="name" value="" placeholder="First and Last Name" required>
+                  <input type="text" class="form-control" id="name" name = "name" ng-model ="name" value="" placeholder="First and Last Name" disabled="disabled" required>
                 </div>
                 <div class="thumb-up col-3" style="position:relative">
                   <p class="error-tooltips" ng-show="myForm.name.$touched && myForm.name.$invalid"><span>Your name</span>Select salutation,Enter first & last name</p>
@@ -79,7 +79,7 @@
               <div class="row field">
                 <div class="col-9 radio-style">
                   <p class="label-text">Type of course<span class="star">*</span></p>
-                <input type ="radio" ng-model ="course" name ="course" value= "full" ng-checked="true" id ="full"><label class="p-r-30" for="full"><span></span> Full Course</label><input type ="radio" name ="course"  ng-model ="course" value= "crash" id ="crash"><label class="p-r-30" for="crash"><span></span>Crash Course </label><input type ="radio" name ="course" ng-model ="course" value = "problem" id ="solving"><label class="p-r-30" for="solving"><span></span> Problem Solving</label>
+                <input type ="radio" ng-model ="course" name ="course" value= "full" ng-checked="true" id ="full" disabled="disabled"><label class="p-r-30" for="full"><span></span> Full Course</label><input type ="radio" name ="course"  ng-model ="course" value= "crash" id ="crash" disabled="disabled"><label class="p-r-30" for="crash" ><span></span>Crash Course </label><input type ="radio" name ="course" ng-model ="course" value = "problem" id ="solving" disabled="disabled"><label class="p-r-30" for="solving"><span></span> Problem Solving</label>
                 </div>
                 
                 <div class="thumb-up col-3">
@@ -89,7 +89,7 @@
               <div class="row field thumb-align">
                 <div class="col-9">
                   <label for="careersInterestedInText">Subjects</label>
-                  <input type="text" class="form-control" name ="career" id="careersInterestedInText" placeholder="Search and select subjects" ng-model = "career" required>
+                  <input type="text" class="form-control" name ="career" id="careersInterestedInText" placeholder="Search and select subjects" ng-model = "career" disabled="disabled" required>
                   <ul class="interested-List" id="careersInterestedInAdded">
                   </ul>
                 </div>
@@ -101,7 +101,7 @@
               <div class="row field">
               <div class="col-9 radio-style">
                  <p class="label-text">Where do you study?<span class="star">*</span></p>
-                  <input type ="radio" ng-model ="location" name ="location" ng-checked="true" value= "home" id ="home"> <label for="home"><span></span>Home</label><input type ="radio" ng-model ="location" name ="location" value= "center" id="center"><label for="center"><span></span> Center</label> 
+                  <input type ="radio" ng-model ="location" name ="location" ng-checked="true" value= "home" id ="home" disabled="disabled"> <label for="home"><span></span>Home</label><input type ="radio" ng-model ="location" name ="location" value= "center" id="center" disabled="disabled"><label for="center"><span></span> Center</label> 
                 </div>
                 <div class="thumb-up col-3">
                   <img ng-show ="location=='home'||location=='center'" src="img/thumb-up.png" alt="Thumb up"> 
@@ -110,10 +110,10 @@
               <div class="row field thumb-align">
                 <div class="col-9">
                   <label for="">Address of the center</label>
-                  <input type="text" name="address" ng-model="address" class="form-control m-b-20" value="" placeholder="Address" required><span style="color:red" ng-show="myForm.address.$touched && myForm.address.$invalid">Address required.</span>
-                  <input type="text" class="form-control m-b-20" value="" placeholder="Location / Town">
-                  <input type="text" class="form-control m-b-20 w49" value="" placeholder="City / District"><input type="text" class="form-control m-b-20 w49 fr" value="" placeholder="Pin Code">
-                  <input type="text" class="form-control m-b-20 w49" value="" placeholder="Phone Number"><input type="text" class="form-control m-b-20 w49 fr" value="" placeholder="E-Mail ID">
+                  <input type="text" name="address" ng-model="address" class="form-control m-b-20" value="" placeholder="Address" disabled="disabled" required>
+                  <input type="text" class="form-control m-b-20" value="" placeholder="Location / Town" disabled="disabled">
+                  <input type="text" class="form-control m-b-20 w49" value="" placeholder="City / District" disabled="disabled"><input type="text" class="form-control m-b-20 w49 fr" value="" placeholder="Pin Code" disabled="disabled">
+                  <input type="text" class="form-control m-b-20 w49" value="" placeholder="Phone Number" disabled="disabled"><input type="text" class="form-control m-b-20 w49 fr" value="" placeholder="E-Mail ID" disabled="disabled">
                 </div>
                 <div class="thumb-up col-3">
                   <img ng-show="address" src="img/thumb-up.png" alt="Thumb up">
