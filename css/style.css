@@ -610,7 +610,6 @@ width:300px;
 .w40{
     width:40%;
 }
-
 .p-b-10{
   padding-bottom: 10px;
 }
@@ -667,7 +666,7 @@ width:300px;
   color: rgb(73, 84, 97);
   font-size: 16px;
   font-weight:normal !important;
-  padding-right: 50px;
+  padding-right: 66px;
 }
 
 .radio-style input[type='radio'] + label span {
@@ -985,49 +984,11 @@ img.ng-hide-remove {
     width:474px !important;
 }
 
-.counts, .count {
- display:inline-block;
- 
-}
-.count {
- vertical-align:middle;
- padding-top:7px;
-}
-.look-like-input{
-    background-color: white;
-    /*border: 1px solid #CCC;*/
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    padding: 0.25em 0.5em;
-    min-height: 1.5em;
-    width:10%;
-    height:40px;
-    font-size:20px;
-}
-.look-like-input.textfield{
-    appearance: field;
-    -moz-appearance: textfield;
-    -webkit-appearance: textfield;
-}
 
-.look-like-input:focus{
-    border: 1px solid #69F;
-    -moz-box-shadow: 0 0 5px 2px rgba(0, 100, 255, 0.15);
-    -webkit-box-shadow: 0 0 5px 2px rgba(0, 100, 255, 0.15);
-    box-shadow: 0 0 5px 2px rgba(0, 100, 255, 0.15);
-}
 
-#firstStepTutor .plus{
-  width:100%;
-  background-color: #01a4e7;
-}
-#firstStepTutor .minus{
-  width:100%;
-  background-color:#bdbdbd;
-}
-
-#firstStepTutor .clock {
-  background: url('../img/clock.png') right no-repeat;
+#firstStepTutor .feestructure{
+  width:21%;
+  height:30px;
+  margin-right:17px;
+  border-radius:4px;
 }
