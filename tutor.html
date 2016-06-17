@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="css/easy-autocomplete.themes.css"> 
         <link rel="stylesheet" href="css/bootstrap-combined.min.css">
         <link rel="stylesheet" href="css/docs.min.css">
+        <link rel ="stylesheet" href="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.css">
     </head>
     <body ng-app= "myApp">
      <div class="container gray-bg" id="firstStepTutor">
@@ -159,7 +160,10 @@
                <div class="col-12 radio-style">
                <p class="label-text" for="">Class start time</p>
               <input type ="radio" name ="time" id ="morning"><label for="morning"><span></span>Morning</label><input type ="radio" name ="time" id ="evening" checked="true"><label for="evening"><span></span>Evening</label>
-              
+              <div ng-controller="sliderCtrl">
+                <rzslider rz-slider-model="slider_visible_bar.value" rz-slider-options="slider_visible_bar.options"></rzslider>
+                <input type="float" ng-model="slider_visible_bar.value" />
+              </div>
                </div>
               </div>
 
@@ -206,7 +210,8 @@
          <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery.easy-autocomplete.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>
+        <script src="js/vendor/rzslider.js"></script>
           
        <!--  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

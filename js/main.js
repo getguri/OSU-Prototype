@@ -1,4 +1,4 @@
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['rzModule', 'ui.bootstrap']);
 
 app.directive("btstAccordion", function () {
     return {
@@ -86,6 +86,24 @@ app.controller('myCtrl', function($scope) {
     $scope.admissions = false;
     $scope.careers = false;
     //$scope.counter = 0;
+}).controller('sliderCtrl', function ($scope) {
+  
+    //Slider with selection bar
+
+   
+
+    $scope.slider_visible_bar = {
+        value: 11.00,
+
+        options: {
+            showSelectionBar: true
+        }
+    };
+
+ $scope.slider_visible_bar.value = parseFloat($scope.slider_visible_bar.value).toFixed(2);
+
+
+   
 });
 
 $(document).ready(function(){
