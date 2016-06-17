@@ -18,10 +18,9 @@
         <link rel="stylesheet" href="css/easy-autocomplete.css">
         <link rel="stylesheet" href="css/easy-autocomplete.themes.css"> 
         <link rel="stylesheet" href="css/bootstrap-combined.min.css">
-        <link rel="stylesheet" href="https://mgcrea.github.io/angular-strap/styles/libs.min.css">
-        <link rel="stylesheet" href="css//docs.min.css">
+        <link rel="stylesheet" href="css/docs.min.css">
     </head>
-    <body ng-app= "mgcrea.ngStrapDocs">
+    <body ng-app= "myApp">
      <div class="container gray-bg" id="secondStepTutor">
            <form name="myForm" action="tutor3.html">
             <header>
@@ -73,7 +72,7 @@
                 </span>
               </div>
               <div class="col-6 padding star-rating-wrap">
-                <div class="star-rating-radio">
+                <div id="concept" class="star-rating-radio">
                   <label for="star1" title="Sucks big time"><input type="radio" id="star1" name="rating" value="1" disabled="disabled"/></label>
                   <label for="star2" title="Kinda bad"><input type="radio" id="star2" name="rating" value="2" disabled="disabled"/></label>
                   <label for="star3" title="Meh"><input type="radio" id="star3" name="rating" value="3" disabled="disabled"/></label>
@@ -90,7 +89,7 @@
                   </span>
                 </div>
                 <div class="col-6 padding star-rating-wrap">
-                  <div class="star-rating-radio">
+                  <div id="easy" class="star-rating-radio">
                     <label for="star6" title="Sucks big time"><input type="radio" id="star6" name="rating" value="1" disabled="disabled"/></label>
                     <label for="star7" title="Kinda bad"><input type="radio" id="star7" name="rating" value="2" disabled="disabled"/></label>
                     <label for="star8" title="Meh"><input type="radio" id="star8" name="rating" value="3" disabled="disabled"/></label>
@@ -107,7 +106,7 @@
                   </span>
                 </div>
                 <div class="col-6 padding star-rating-wrap">
-                  <div class="star-rating-radio">
+                  <div id="exam" class="star-rating-radio">
                     <label for="star11" title="Sucks big time"><input type="radio" id="star11" name="rating" value="1" disabled="disabled"/></label>
                     <label for="star12" title="Kinda bad"><input type="radio" id="star12" name="rating" value="2" disabled="disabled"/></label>
                     <label for="star13" title="Meh"><input type="radio" id="star13" name="rating" value="3" disabled="disabled"/></label>
@@ -122,9 +121,10 @@
                   <span  class="text f-s-20">
                     General Rating
                   </span>
+                  <div>Automatically calculated by calculating the average of above three</div>
                 </div>
                 <div class="col-6 padding star-rating-wrap">
-                  <div class="star-rating-radio">
+                  <div id="general" class="star-rating-radio">
                     <label for="star16" title="Sucks big time"><input type="radio" id="star16" name="rating" value="1" disabled="disabled"/></label>
                     <label for="star17" title="Kinda bad"><input type="radio" id="star17" name="rating" value="2" disabled="disabled"/></label>
                     <label for="star18" title="Meh"><input type="radio" id="star18" name="rating" value="3" disabled="disabled"/></label>
@@ -157,9 +157,9 @@
                 <p class="label-text">Have you seen improvement in your grade with this tutor?<span class="star">*</span></p>
                 <div class="radio-style">
                   <input type="radio" name="careerImpactBySubject" id="careerImpactBySubject_1" disabled="disabled">
-                  <label for="careerImpactBySubject_1"><span></span>Not Yet</label>
+                  <label for="careerImpactBySubject_1"><span class="grade"></span>Not Yet</label>
                   <input type="radio" name="careerImpactBySubject" id="careerImpactBySubject_2" disabled="disabled" checked="true">
-                  <label for="careerImpactBySubject_2"><span></span>Yes Absolutely</label>
+                  <label for="careerImpactBySubject_2"><span class="grade"></span>Yes Absolutely</label>
                 </div>
               </div>
               </div>
@@ -189,9 +189,8 @@
                     Would you recommend this tutor?
                   </p>
                 
-              <div class="col-6 thumb-rating-radio">
-                
-                <label class="active" for="thumbup" title=""><i class ="fa fa-thumbs-o-up f-s-30"></i><input type="radio" id="thumbup" name="thumbrating" value="1" disabled="disabled"/></label> <span class="f-s-30 active">Yes!</span><label class="p-l-30" for="thumbdown" title=""><i class ="fa fa-thumbs-o-down f-s-30"></i><input type="radio" id="thumbdown" name="thumbrating" value="2" disabled="disabled"/></label><span class="f-s-30">No</span>
+              <div class="col-12 radio-style">
+                <input type ="radio" name ="thumbrating" id ="thumbup"><label class="thumb" for="thumbup"><span class="yes"></span><span class="m-l-30">Yes!</span></label><input type ="radio" name ="thumbrating" id ="thumbdown" checked="true"><label class="thumb" for="thumbdown"><span class="no"></span><span class="m-l-30">No</span></label>
                 </div>
               
                   
@@ -228,11 +227,9 @@
         <script src="js/main.js"></script>
          <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery.easy-autocomplete.js"></script>
-         <script src="https://cdn.jsdelivr.net/angularjs/1.5.5/angular-animate.min.js" data-semver="1.5.5"></script>
-        <script src="https://cdn.jsdelivr.net/angularjs/1.5.5/angular-sanitize.min.js" data-semver="1.5.5"></script>
-        <script src="https://mgcrea.github.io/angular-strap/dist/angular-strap.js" data-semver="v2.3.8"></script>
-        <script src="https://mgcrea.github.io/angular-strap/dist/angular-strap.tpl.js" data-semver="v2.3.8"></script>
-        <script src="https://mgcrea.github.io/angular-strap/docs/angular-strap.docs.tpl.js" data-semver="v2.3.8"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>
+        <script src="js/vendor/rzslider.js"></script>
           
        <!--  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

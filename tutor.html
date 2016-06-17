@@ -123,8 +123,8 @@
               <div class="row field">
               <div class="col-9 radio-style">
                   <p class="label-text" for="">Number of Students who attend with me</p>
-                  <div class="p-b-30"><input type ="radio" name ="students"   id ="zero" checked="true"><label for="zero"><span></span> 0</label> <input type ="radio" name ="students"   id ="one" ><label for="one"><span></span> 1-3 </label><input type ="radio" name ="students"  id ="four"><label for="four"><span></span> 4-10</label></div>
-                  <div><input type ="radio" name ="students"   id ="ten"><label class="p-r-13" for="ten"><span></span>10-15</label><input type ="radio" name ="students" id ="fifteen"><label for="fifteen"><span></span>15+</label></div>
+                  <div class="p-b-30"><input type ="radio" name ="students"   id ="zero" checked="true"><label for="zero"><span class="students"></span> 0</label> <input type ="radio" name ="students"   id ="one" ><label for="one"><span class="students"></span> 1-3 </label><input type ="radio" name ="students"  id ="four"><label for="four"><span class="students"></span> 4-10</label></div>
+                  <div><input type ="radio" name ="students"   id ="ten"><label class="p-r-13" for="ten"><span class="students"></span>10-15</label><input type ="radio" name ="students" id ="fifteen"><label for="fifteen"><span class="students"></span>15+</label></div>
               </div>
                 <div class="thumb-up col-3">
                   <!-- <img ng-show="address" src="img/thumb-up.png" alt="Thumb up"> -->
@@ -134,8 +134,8 @@
               <div class="row field">
               <div class="col-9 radio-style">
                   <p class="label-text" for="">Fees Structure</p>
-                  <div class="p-b-30"><input type ="radio" name ="fees"   id ="hourly" checked="true"><label for="hourly"><span></span>Hourly</label> <input type ="radio" name ="fees"   id ="weekly" ><label for="weekly"><span></span>Weekly</label><input type ="radio" name ="fees"  id ="monthly"><label for="monthly"><span></span>Monthly</label></div>
-                  <div><input type ="radio" name ="fees"   id ="yearly"><label class="p-r-13" for="yearly"><span></span>Yearly</label><input type ="radio" name ="fees"   id ="percourse"><label for="percourse"><span></span>Percourse</label></div>
+                  <div class="p-b-30"><input type ="radio" name ="fees"   id ="hourly" checked="true"><label for="hourly"><span class="fee"></span>Hourly</label> <input type ="radio" name ="fees"   id ="weekly" ><label for="weekly"><span class="fee"></span>Weekly</label><input type ="radio" name ="fees"  id ="monthly"><label for="monthly"><span class="fee"></span>Monthly</label></div>
+                  <div><input type ="radio" name ="fees"   id ="yearly"><label class="p-r-13" for="yearly"><span class="fee"></span>Yearly</label><input type ="radio" name ="fees"   id ="percourse"><label for="percourse"><span class="fee"></span>Percourse</label></div>
                 </div>
               <div class="thumb-up col-3">
                   <!-- <img src="img/thumb-up.png" alt="Thumb up"> -->
@@ -159,7 +159,7 @@
               <div class="row field">
                <div class="col-12 radio-style">
                <p class="label-text" for="">Class start time</p>
-              <input type ="radio" name ="time" id ="morning"><label for="morning"><span></span>Morning</label><input type ="radio" name ="time" id ="evening" checked="true"><label for="evening"><span></span>Evening</label>
+              <input type ="radio" name ="time" id ="morning"><label for="morning"><span class="time"></span><span class="morning"></span><span class="m-l-30">Morning</span></label><input type ="radio" name ="time" id ="evening" checked="true"><label for="evening"><span class="time"></span><span class="evening"></span><span class="m-l-30">Evening</span></label>
               <div ng-controller="sliderCtrl">
                 <rzslider rz-slider-model="slider_visible_bar.value" rz-slider-options="slider_visible_bar.options"></rzslider>
                 <input type="float" ng-model="slider_visible_bar.value" />
@@ -171,8 +171,8 @@
               <div class="row field">
                 <div class="col-9 radio-style">
                   <p class="label-text" for="">Duration of each class</p>
-                  <div class="p-b-30"><input type ="radio" name ="duration"   id ="decimal" checked="true"><label for="decimal"><span></span>0.5</label> <input type ="radio" name ="duration"   id ="one" ><label for="one"><span></span>1.0</label><input type ="radio" name ="one5"  id ="monthly"><label for="one5"><span></span>1.5</label></div>
-                  <div><input type ="radio" name ="duration"   id ="two"><label class="p-r-13" for="two"><span></span>2</label><input type ="radio" name ="duration"   id ="two5"><label for="two5"><span></span>2.5+</label></div>
+                  <div class="p-b-30"><input type ="radio" name ="duration"   id ="decimal" checked="true"><label for="decimal"><span class="class"></span>0.5</label> <input type ="radio" name ="duration"   id ="one" ><label for="one"><span class="class"></span>1.0</label><input type ="radio" name ="one5"  id ="monthly"><label for="one5"><span class="class"></span>1.5</label></div>
+                  <div><input type ="radio" name ="duration"   id ="two"><label class="p-r-13" for="two"><span class="class"></span>2</label><input type ="radio" name ="duration"   id ="two5"><label for="two5"><span class="class"></span>2.5+</label></div>
                 </div>              
                <div class="thumb-up col-3">
                   <!-- <img src="img/thumb-up.png" alt="Thumb up"> -->

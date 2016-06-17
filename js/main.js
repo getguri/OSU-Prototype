@@ -211,8 +211,38 @@ $(document).ready(function(){
 		$(this).parent().prevAll("label").addClass('active');
 		$(this).parent().addClass('active');
 		$(this).parent().nextAll("label").removeClass('active');
+        var conceptItems = $('#concept .active').length;
+        var easyItems = $('#easy .active').length;
+        var examItems = $('#exam .active').length;
+        var generalItems = parseInt((conceptItems+easyItems+examItems)/3);
+        if(generalItems == 1){
+            $('#general #star16').parent().addClass('general');
+        }
+        else if(generalItems == 2){
+            $('#general #star16').parent().addClass('general');
+            $('#general #star17').parent().addClass('general');
+        }
+        else if(generalItems == 3){
+            $('#general #star16').parent().addClass('general');
+            $('#general #star17').parent().addClass('general');
+            $('#general #star18').parent().addClass('general');
+        }
+        else if(generalItems == 4){
+            $('#general #star16').parent().addClass('general');
+            $('#general #star17').parent().addClass('general');
+            $('#general #star18').parent().addClass('general');
+            $('#general #star19').parent().addClass('general');
+        }
+         else if(generalItems == 5){
+            $('#general #star16').parent().addClass('general');
+            $('#general #star17').parent().addClass('general');
+            $('#general #star18').parent().addClass('general');
+            $('#general #star19').parent().addClass('general');
+            $('#general #star20').parent().addClass('general');
+        }
 	});
 		
+        
 	/* click on edit button fields enable */
 
 	$('#starrating .edit').click(function(){
@@ -225,12 +255,5 @@ $(document).ready(function(){
 		if($('#starrating').hasClass('disabled')){
 			return false	
 		}
-	});
-
-	$(".thumb-rating-radio input[type='radio']").on('change', function(){
-		$(this).parent().addClass('active');
-		$(this).parent().next().addClass('active');
-		$(this).parent().prevAll().removeClass('active');
-
 	});	
 });

@@ -548,6 +548,9 @@ word-wrap: break-word;
 width:300px;
 }
 
+.m-l-30{
+  margin-left:30px;
+}
 .h80{
     height:80px;
 }
@@ -669,7 +672,7 @@ width:300px;
   padding-right: 66px;
 }
 
-.radio-style input[type='radio'] + label span {
+.radio-style input[type='radio'] + label span.time,.fee,.students,.class,.grade {
   border: 3px solid rgb(195, 206, 218);
   border-radius: 50%;
   box-shadow: inset 0px 1px 7px 0px rgba(0, 0, 0, 0.17);
@@ -682,11 +685,58 @@ width:300px;
   position: relative;
 }
 
-.radio-style input[type='radio']:checked +  label span {
+.radio-style input[type='radio'] + label span.morning ,.evening,.yes,.no {
+  position: absolute;
+  display: inline-block;
+   width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  }
+  .radio-style input[type='radio'] + label span.yes,.no{
+     height: 29px !important;
+  }
+
+
+.radio-style input[type='radio']:checked +  label span.time {
   border: 3px solid rgb(0, 148, 203);
 }
 
-.radio-style input[type='radio']:checked +  label span:before {
+.radio-style input[type='radio']:checked +  label span.morning {
+  background: url('../img/morning-blue.png') center center no-repeat;
+} 
+
+.radio-style input[type='radio'] +  label span.morning {
+  background: url('../img/morning-gray.png') center center no-repeat;
+} 
+
+.radio-style input[type='radio']:checked +  label span.evening {
+  background: url('../img/evening-blue.png') center center no-repeat;
+} 
+
+.radio-style input[type='radio'] +  label span.evening {
+  background: url('../img/evening-gray.png') center center no-repeat;
+}  
+
+ 
+
+ .radio-style input[type='radio'] +  label span.yes {
+  background: url('../img/thumb-yes-gray.png') center center no-repeat;
+ } 
+
+ .radio-style input[type='radio'] + label span.no {
+  background: url('../img/thumb-no-gray.png') center center no-repeat;
+ }
+
+ .radio-style input[type='radio']:checked +  label span.yes {
+  background: url('../img/thumb-yes-green.png') center center no-repeat;
+ }
+ .radio-style input[type='radio']:checked + label span.no {
+  background: url('../img/thumb-no-green.png') center center no-repeat;
+ } 
+
+  
+
+.radio-style input[type='radio']:checked +  label span.time:before {
   content: '';
   position: absolute;
   width: 10px;
@@ -700,6 +750,11 @@ width:300px;
 .radio-style input[type='radio']:checked +  label {
   color: rgb(0, 148, 203);
 }
+
+.radio-style input[type='radio']:checked +  label.thumb {
+  color: #64bd8c;
+}
+
 
 .label-text {
   font-size: 16px;
@@ -742,43 +797,14 @@ width:300px;
   background: url('../img/active-star.png') center center no-repeat; 
 }
 
+.star-rating-radio label.general{
+  background: url('../img/success-star.png') center center no-repeat; 
+} 
+
 .star-rating-radio .error {
   text-align: right;
 }
 
-.thumb-rating-radio input {
-  display: none;
-}
-
-
-.thumb-rating-radio {
-  display: inline-block;
-}
-
-.thumb-rating-radio label{
-  width: 27px;
-  height: 27px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 2px;
-  cursor: pointer;
-}
-.thumb-rating-radio .active .fa-thumbs-o-up {
- color:#64bd8c;
-}
-
-.thumb-rating-radio .active .fa-thumbs-o-down {
- color:#64bd8c;
-}
-
-.thumb-rating-radio .active{
-   color:#64bd8c;
-}
-
-
-.thumb-rating-radio .error {
-  text-align: right;
-}
 .tutor-rating  {
   padding: 20px 15px 25px;
   border-bottom: 2px solid #c3ceda;
