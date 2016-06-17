@@ -672,7 +672,7 @@ width:300px;
   padding-right: 66px;
 }
 
-.radio-style input[type='radio'] + label span.time,.fee,.students,.class,.grade {
+.radio-style input[type='radio'] + label span.time,.fee,.students,.class,.grade,.location,.course {
   border: 3px solid rgb(195, 206, 218);
   border-radius: 50%;
   box-shadow: inset 0px 1px 7px 0px rgba(0, 0, 0, 0.17);
@@ -701,6 +701,24 @@ width:300px;
   border: 3px solid rgb(0, 148, 203);
 }
 
+.radio-style input[type='radio']:checked +  label span.fee {
+  border: 3px solid rgb(0, 148, 203);
+}
+.radio-style input[type='radio']:checked +  label span.students {
+  border: 3px solid rgb(0, 148, 203);
+}
+.radio-style input[type='radio']:checked +  label span.class {
+  border: 3px solid rgb(0, 148, 203);
+}
+.radio-style input[type='radio']:checked +  label span.grade {
+  border: 3px solid rgb(0, 148, 203);
+}
+.radio-style input[type='radio']:checked +  label span.location {
+  border: 3px solid rgb(0, 148, 203);
+}
+.radio-style input[type='radio']:checked +  label span.course {
+  border: 3px solid rgb(0, 148, 203);
+}
 .radio-style input[type='radio']:checked +  label span.morning {
   background: url('../img/morning-blue.png') center center no-repeat;
 } 
@@ -747,6 +765,71 @@ width:300px;
   left: 7px;
 }
 
+.radio-style input[type='radio']:checked +  label span.fee:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 148, 203);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+}
+
+.radio-style input[type='radio']:checked +  label span.students:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 148, 203);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+}
+
+.radio-style input[type='radio']:checked +  label span.class:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 148, 203);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+}
+
+.radio-style input[type='radio']:checked +  label span.grade:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 148, 203);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+}
+
+.radio-style input[type='radio']:checked +  label span.location:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 148, 203);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+}
+
+.radio-style input[type='radio']:checked +  label span.course:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 148, 203);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+}
 .radio-style input[type='radio']:checked +  label {
   color: rgb(0, 148, 203);
 }
