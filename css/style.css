@@ -568,6 +568,9 @@ width:300px;
 .p-r-35{
     padding-right: 35px !important;
 }
+.p-r-40{
+    padding-right: 40px !important;
+}
 .p-r-75{
     padding-right: 75px !important;
 }
@@ -1083,12 +1086,7 @@ img.ng-hide-remove {
 @media only screen and (min-width: 700px){
   #firstStepRegistration .col-6.f-s-30 {
     font-size: 20px !important;
-  }
-  #firstStepTutor .p-r-30{
-    padding-right: 0 !important;
-    font-size:12px !important;
-  }
-  
+  } 
 }
 
 @media only screen and (max-width: 800px){
