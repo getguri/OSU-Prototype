@@ -565,8 +565,23 @@ width:300px;
 .p-r-5{
     padding-right: 5px;
 }
+.p-r-35{
+    padding-right: 35px !important;
+}
+.p-r-75{
+    padding-right: 75px !important;
+}
+.p-r-80{
+    padding-right: 80px !important;
+}
 .p-r-85{
-    padding-right: 85px;
+    padding-right: 85px !important;
+}
+.p-r-90{
+    padding-right: 90px !important;
+}
+.p-r-125{
+    padding-right: 125px !important;
 }
 .p-t-5{
     padding-top: 5px;
@@ -669,7 +684,7 @@ width:300px;
   color: rgb(73, 84, 97);
   font-size: 16px;
   font-weight:normal !important;
-  padding-right: 66px;
+  padding-right: 106px;
 }
 
 .radio-style input[type='radio'] + label span.time,.fee,.students,.class,.grade,.location,.course {
