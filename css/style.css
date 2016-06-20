@@ -690,7 +690,7 @@ width:300px;
   padding-right: 106px;
 }
 
-.radio-style input[type='radio'] + label span.time,.fee,.students,.class,.grade,.location,.course {
+.radio-style input[type='radio'] + label span.time,.fee,.students,.class,.grade,.location,.course,.radio,.contact,.call {
   border: 3px solid rgb(195, 206, 218);
   border-radius: 50%;
   box-shadow: inset 0px 1px 7px 0px rgba(0, 0, 0, 0.17);
@@ -735,6 +735,15 @@ width:300px;
   border: 3px solid rgb(0, 148, 203);
 }
 .radio-style input[type='radio']:checked +  label span.course {
+  border: 3px solid rgb(0, 148, 203);
+}
+.radio-style input[type='radio']:checked +  label span.radio {
+  border: 3px solid rgb(0, 148, 203);
+}
+.radio-style input[type='radio']:checked +  label span.contact {
+  border: 3px solid rgb(0, 148, 203);
+}
+.radio-style input[type='radio']:checked +  label span.call {
   border: 3px solid rgb(0, 148, 203);
 }
 .radio-style input[type='radio']:checked +  label span.morning {
@@ -848,6 +857,41 @@ width:300px;
   top: 7px;
   left: 7px;
 }
+
+.radio-style input[type='radio']:checked +  label span.radio:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 148, 203);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+}
+
+.radio-style input[type='radio']:checked +  label span.contact:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 148, 203);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+}
+
+
+.radio-style input[type='radio']:checked +  label span.call:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 148, 203);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+}
+
 .radio-style input[type='radio']:checked +  label {
   color: rgb(0, 148, 203);
 }

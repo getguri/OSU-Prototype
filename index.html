@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="" ng-app= "mgcrea.ngStrapDocs">
+<html class="no-js" lang="" ng-app= "myApp">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -17,10 +17,11 @@
         <link rel="stylesheet" href="css/easy-autocomplete.css">
         <link rel="stylesheet" href="css/easy-autocomplete.themes.css">
 
+
     </head>
     <body ng-controller ="myCtrl">
         <div class="container gray-bg" id="firstStepRegistration">
-           <form name="myForm" method = "" action="parent-2.html">
+           <form name="myForm" method = "" action="parent2.html">
             <header>
               <div class="logo row">
               <div class="col-6">
@@ -128,8 +129,8 @@
               <div class="row field">
                 <div class="col-9 radio-style">
                   <p class="label-text" for="">Your relationship with the student</p>
-                  <div class="p-b-30"><input type ="radio" name ="radio"   id ="mother" checked="true"><label for="mother"><span></span> Mother</label> <input type ="radio" name ="radio"   id ="father" ><label for="father"><span></span> Father </label><input type ="radio" name ="radio"  id ="sibling"><label for="sibling"><span></span> Older Siblings</label></div>
-                  <div><input type ="radio" name ="radio"   id ="guide"><label class="p-r-13" for="guide"><span></span>Career Guide </label><input type ="radio" name ="radio"   id ="guardian"><label for="guardian"><span></span> Guardian</label></div>
+                  <div class="p-b-30"><input type ="radio" name ="radio"   id ="mother" checked="true"><label for="mother"><span class="radio"></span> Mother</label> <input type ="radio" name ="radio"   id ="father" ><label for="father"><span class="radio"></span> Father </label><input type ="radio" name ="radio"  id ="sibling"><label for="sibling"><span class="radio"></span> Older Siblings</label></div>
+                  <div><input type ="radio" name ="radio"   id ="guide"><label class="p-r-13" for="guide"><span class="radio"></span>Career Guide </label><input type ="radio" name ="radio"   id ="guardian"><label for="guardian"><span class="radio"></span> Guardian</label></div>
                 </div>
                 
                 <!-- <div class="thumb-up col-3">
@@ -220,7 +221,7 @@
               <div class="row field">
                 <div class="col-9 radio-style">
                   <p class="label-text" for="">Can we follow up about these career choices by phone or email?</p>
-                <input type ="radio" name ="contact" id = "yescontact" ng-model ="cntact" value = "yes"><label for="yescontact"><span></span> Yes,Please </label><input type ="radio" name ="contact" id ="dontcontact" ng-model ="cntact" value = "no"> <label for="dontcontact"><span></span>Please don't</label>
+                <input type ="radio" name ="contact" id = "yescontact" ng-model ="cntact" value = "yes"><label for="yescontact"><span class="radio"></span> Yes,Please </label><input type ="radio" name ="contact" id ="dontcontact" ng-model ="cntact" value = "no"> <label for="dontcontact"><span class="radio"></span>Please don't</label>
                 </div>
               
                 
@@ -244,8 +245,8 @@
               <div class="row field">
                 <div class="col-9 radio-style">
                   <p class="label-text" for="">When would be a good time to call you?</p>
-                  <div class="p-b-30"><input type ="radio" name ="time" id = "anytime" checked="true"><label for="anytime"><span></span>Any Time</label><input type ="radio" name ="time" id = "time1"><label for="time1"><span></span> 10AM - 6PM </label><input type ="radio" name ="time" id = "time2"><label for="time2"><span></span> 9AM - 1PM</label></div>
-                  <div><input type ="radio" name ="time" id = "time3"><label class="p-r-34" for="time3"><span></span>2PM - 6PM </label><input type ="radio" name ="time" id = "time4"><label for="time4"><span></span>6PM - 8PM</label></div>
+                  <div class="p-b-30"><input type ="radio" name ="call" id = "anytime" checked="true"><label for="anytime"><span class="radio"></span>Any Time</label><input type ="radio" name ="call" id = "time1"><label for="time1"><span class="radio"></span> 10AM - 6PM </label><input type ="radio" name ="call" id = "time2"><label for="time2"><span class="radio"></span> 9AM - 1PM</label></div>
+                  <div><input type ="radio" name ="call" id = "time3"><label class="p-r-34" for="time3"><span class="radio"></span>2PM - 6PM </label><input type ="radio" name ="call" id = "time4"><label for="time4"><span class="radio"></span>6PM - 8PM</label></div>
                 </div>
                 
                  <!-- <div class="thumb-up col-3">
@@ -267,12 +268,9 @@
           <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js">
-        </script>
-        <script src="https://cdn.jsdelivr.net/angularjs/1.5.5/angular-sanitize.min.js" data-semver="1.5.5"></script>
-        <script src="https://mgcrea.github.io/angular-strap/dist/angular-strap.js" data-semver="v2.3.8"></script>
-        <script src="https://mgcrea.github.io/angular-strap/dist/angular-strap.tpl.js" data-semver="v2.3.8"></script>
-        <script src="https://mgcrea.github.io/angular-strap/docs/angular-strap.docs.tpl.js" data-semver="v2.3.8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>
+        <script src="js/vendor/rzslider.js"></script>
         <script src="js/vendor/jquery.easy-autocomplete.js"></script>
         <script src="js/main.js"></script>
         
