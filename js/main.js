@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['rzModule', 'ui.bootstrap']);
+var app = angular.module('myApp', ['ngAnimate','rzModule', 'ui.bootstrap']);
 
 app.directive("btstAccordion", function () {
     return {
