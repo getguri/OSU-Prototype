@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngAnimate','rzModule', 'ui.bootstrap']);
+var app = angular.module('myApp', ['ngAnimate']);
 
 app.directive("btstAccordion", function () {
     return {
@@ -9,7 +9,6 @@ app.directive("btstAccordion", function () {
         template:
             "<div class='accordion' ng-transclude></div>",
         link: function (scope, element, attrs) {
-
             // give this element a unique id
             var id = element.attr("id");
             if (!id) {
@@ -89,9 +88,6 @@ app.controller('myCtrl', function($scope) {
 }).controller('sliderCtrl', function ($scope) {
   
     //Slider with selection bar
-
-   
-
     $scope.slider_visible_bar = {
         value: 11.00,
 
@@ -101,12 +97,11 @@ app.controller('myCtrl', function($scope) {
     };
 
  $scope.slider_visible_bar.value = parseFloat($scope.slider_visible_bar.value).toFixed(2);
-
-
    
 });
 
 $(document).ready(function(){
+
     $('#firstStepRegistration input').on('blur change', function(){
 
         var yourFullNameText = $('#yourFullNameText');
@@ -256,4 +251,63 @@ $(document).ready(function(){
 			return false	
 		}
 	});	
+
+     if ($("#evening").is(":checked")) {
+        $('.slider-time2').val("6:00 PM");
+    }
+    $("#morning").click(function(){
+        if($('.slider-time2').val()=="6:00 PM")
+            {
+                $('.slider-time2').val("6:00 AM");
+            }      
+    });
+
+    $("#evening").click(function(){
+        if($('.slider-time2').val()=="00:00 PM")
+            {
+                $('.slider-time2').val("12:00 PM");
+            }      
+    });
+
+    $("#slider-range").slider({
+    range: true,
+    min: 0,
+    max: 660,
+    step: 15,
+    values: [0, 360],
+    slide: function (e, ui) {
+        var hours2 = Math.floor(ui.values[1] / 60);
+        var minutes2 = ui.values[1] - (hours2 * 60);
+
+        if (hours2.length == 1) hours2 = '0' + hours2;
+        if (minutes2.length == 1) minutes2 = '0' + minutes2;
+        if (minutes2 == 0) minutes2 = '00';
+        if (hours2 >= 12) {
+            if (hours2 == 12) {
+                hours2 = hours2;
+                minutes2 = minutes2 ;
+            } else if (hours2 == 24) {
+                hours2 = 11;
+                minutes2 = "59 PM";
+            } else {
+                hours2 = hours2 - 12;
+                minutes2 = minutes2 ;
+            }
+        } else {
+            hours2 = hours2;
+            minutes2 = minutes2;
+        }
+
+        if ($("#morning").is(":checked")) {
+            $('.slider-time2').val(hours2 + ':' + minutes2+' AM');
+        }
+        else{
+            console.log($('.slider-time2').val());
+            $('.slider-time2').val(hours2 + ':' + minutes2+' PM');
+            if($('.slider-time2').val()=="0.00 PM"){
+                $('.slider-time2').val("12.00 PM");
+            }
+        }
+    }
+});
 });

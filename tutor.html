@@ -12,6 +12,7 @@
 
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/media.css">
@@ -19,7 +20,6 @@
         <link rel="stylesheet" href="css/easy-autocomplete.themes.css"> 
         <link rel="stylesheet" href="css/bootstrap-combined.min.css">
         <link rel="stylesheet" href="css/docs.min.css">
-        <link rel ="stylesheet" href="css/rzslider.css">
     </head>
     <body ng-app= "myApp">
      <div class="container gray-bg" id="firstStepTutor">
@@ -143,7 +143,7 @@
               
               <div class="row field">
               <div class="col-12 radio-style">
-              <div><input type="text" class="feestructure" value="Hours per day" disabled="disabled"><input type="text" class="feestructure" value="No of day/week" disabled="disabled"><input type="text" class="feestructure" value="Hours per month" disabled="disabled"><input type="text" class="feestructure" value="No of course" disabled="disabled"></div>
+              <div><input type="text" class="feestructure" value="Hours per day"><input type="text" class="feestructure" value="No of day/week"><input type="text" class="feestructure" value="Hours per month" disabled="disabled"><input type="text" class="feestructure" value="No of course" disabled="disabled"></div>
               </div>
             
               </div>
@@ -158,12 +158,21 @@
                <div class="col-12 radio-style">
                <p class="label-text" for="">Class start time</p>
               <input type ="radio" name ="time" id ="morning" disabled="disabled"><label for="morning"><span class="time"></span><span class="morning"></span><span class="m-l-30">Morning</span></label><input type ="radio" name ="time" id ="evening" checked="true" disabled="disabled"><label for="evening"><span class="time"></span><span class="evening"></span><span class="m-l-30">Evening</span></label>
-              <div ng-controller="sliderCtrl">
-                <rzslider rz-slider-model="slider_visible_bar.value" rz-slider-options="slider_visible_bar.options"></rzslider>
-                <input type="float" ng-model="slider_visible_bar.value" disabled="disabled"/>
-              </div>
                </div>
               </div>
+
+
+              <div class="row field thumb-align">
+               <div class="col-10">
+               <div id="time-range">
+                <div class="sliders_step1">
+                  <div id="slider-range"></div>
+                  </div><div style="padding-top:15px"><span class="p-r-40">12</span><span class="p-r-45">1</span><span class="p-r-40">2</span><span class="p-r-45">3</span><span class="p-r-40">4</span><span class="p-r-40">5</span><span class="p-r-45">6</span><span class="p-r-45">7</span><span class="p-r-40">8</span><span class="p-r-40">9</span><span class="p-r-40">10</span><span class="p-r-40">11</span></div></div></div>
+                  <div class="col-2">
+                   <input class="slider-time2">
+                  </div>
+                </div>
+                
 
              
               <div class="row field">
@@ -201,15 +210,15 @@
             
        
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script> 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script defer="" src="https://togetherjs.com/togetherjs.js"></script>
         <script src="js/main.js"></script>
          <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery.easy-autocomplete.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>
-        <script src="js/vendor/rzslider.js"></script>
+       
           
        <!--  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
