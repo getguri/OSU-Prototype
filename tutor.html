@@ -66,15 +66,15 @@
                     <option value="XII">Mrs.</option>
                   </select>
               </div>
-                <div class="col-6"> 
+                <div class="col-9"> 
                                
                   <label for="">Full Name<span class="star">*</span></label>
                   <input type="text" class="form-control" id="name" name = "name" ng-model ="name" value="" placeholder="First and Last Name" disabled="disabled" required>
                 </div>
-                <div class="thumb-up col-3" style="position:relative">
+                <!-- <div class="thumb-up col-3" style="position:relative">
                   <p class="error-tooltips" ng-show="myForm.name.$touched && myForm.name.$invalid"><span>Your name</span>Select salutation,Enter first & last name</p>
                   <img ng-show ="name" src="img/thumb-up.png" alt="Thumb up">
-                </div>
+                </div> -->
               </div>
               <div class="row field">
                 <div class="col-12 radio-style">
@@ -85,65 +85,65 @@
                
               </div>
               <div class="row field thumb-align">
-                <div class="col-9">
+                <div class="col-12">
                   <label for="careersInterestedInText">Subjects</label>
                   <input type="text" class="form-control" name ="career" id="careersInterestedInText" placeholder="Search and select subjects" ng-model = "career" disabled="disabled" required>
                   <ul class="interested-List" id="careersInterestedInAdded">
                   </ul>
                 </div>
                 
-                <div class="thumb-up col-3">
+                <!-- <div class="thumb-up col-3">
                   <img ng-show ="career" src="img/thumb-up.png" alt="Thumb up">
-                </div>
+                </div> -->
               </div>
               <div class="row field">
-              <div class="col-9 radio-style">
+              <div class="col-12 radio-style">
                  <p class="label-text">Where do you study?<span class="star">*</span></p>
-                  <input type ="radio" ng-model ="location" name ="location" ng-checked="true" value= "home" id ="home" disabled="disabled"> <label for="home"><span class="location"></span>Home</label><input type ="radio" ng-model ="location" name ="location" value= "center" id="center" disabled="disabled"><label for="center"><span class="location"></span> Center</label> 
+                  <input type ="radio" ng-model ="location" name ="location" value= "home" id ="home" disabled="disabled"> <label for="home"><span class="location"></span>Home</label><input type ="radio" ng-model ="location" name ="location" ng-checked="true" value= "center" id="center" disabled="disabled"><label for="center"><span class="location"></span> Center</label> 
                 </div>
-                <div class="thumb-up col-3">
+                <!-- <div class="thumb-up col-3">
                   <img ng-show ="location=='home'||location=='center'" src="img/thumb-up.png" alt="Thumb up"> 
-                </div>
+                </div> -->
                 </div>
               <div class="row field thumb-align">
-                <div class="col-9">
+                <div class="col-12">
                   <label for="">Address of the center</label>
                   <input type="text" name="address" ng-model="address" class="form-control m-b-20" value="" placeholder="Address" disabled="disabled" required>
                   <input type="text" class="form-control m-b-20" value="" placeholder="Location / Town" disabled="disabled">
                   <input type="text" class="form-control m-b-20 w49" value="" placeholder="City / District" disabled="disabled"><input type="text" class="form-control m-b-20 w49 fr" value="" placeholder="Pin Code" disabled="disabled">
                   <input type="text" class="form-control m-b-20 w49" value="" placeholder="Phone Number" disabled="disabled"><input type="text" class="form-control m-b-20 w49 fr" value="" placeholder="E-Mail ID" disabled="disabled">
                 </div>
-                <div class="thumb-up col-3">
+                <!-- <div class="thumb-up col-3">
                   <img ng-show="address" src="img/thumb-up.png" alt="Thumb up">
-                </div>
+                </div> -->
               </div></div>
              
               <div class="row field">
-              <div class="col-9 radio-style">
+              <div class="col-12 radio-style">
                   <p class="label-text" for="">Number of Students who attend with me</p>
-                  <div class="p-b-30"><input type ="radio" name ="students"   id ="zero" checked="true" disabled="disabled"><label for="zero"><span class="students"></span> 0</label> <input type ="radio" name ="students"   id ="one" disabled="disabled"><label for="one"><span class="students"></span> 1-3 </label><input type ="radio" name ="students"  id ="four" disabled="disabled"><label for="four"><span class="students"></span> 4-10</label></div>
+                  <div class="p-b-30"><input type ="radio" name ="students"   id ="zero"  disabled="disabled"><label for="zero"><span class="students"></span> 0</label> <input type ="radio" name ="students"   id ="one" checked="true" disabled="disabled"><label for="one"><span class="students"></span> 1-3 </label><input type ="radio" name ="students"  id ="four" disabled="disabled"><label for="four"><span class="students"></span> 4-10</label></div>
                   <div><input type ="radio" name ="students"   id ="ten" disabled="disabled"><label class="p-r-85" for="ten"><span class="students"></span>10-15</label><input type ="radio" name ="students" id ="fifteen" disabled="disabled"><label for="fifteen"><span class="students"></span>15+</label></div>
               </div>
-                <div class="thumb-up col-3">
-                  <!-- <img ng-show="address" src="img/thumb-up.png" alt="Thumb up"> -->
-                </div>
+               <!--  <div class="thumb-up col-3">
+                  <img ng-show="address" src="img/thumb-up.png" alt="Thumb up">
+                </div> -->
               </div>
 
               <div class="row field">
-              <div class="col-9 radio-style">
+              <div class="col-12 radio-style">
                   <p class="label-text" for="">Fees Structure</p>
-                  <div class="p-b-30"><input type ="radio" name ="fees" id ="hourly" checked="true" disabled="disabled"><label for="hourly" class="p-r-80"><span class="fee"></span>Hourly</label> <input type ="radio" name ="fees"   id ="weekly" disabled="disabled"><label for="weekly" class="p-r-80"><span class="fee"></span>Weekly</label><input type ="radio" name ="fees"  id ="monthly" disabled="disabled"><label for="monthly" class="p-r-80"><span class="fee"></span>Monthly</label></div>
-                  <div><input type ="radio" name ="fees"   id ="yearly" disabled="disabled"><label class="p-r-90" for="yearly"><span class="fee"></span>Yearly</label><input type ="radio" name ="fees"   id ="percourse" disabled="disabled"><label for="percourse"><span class="fee"></span>Percourse</label></div>
+                  <div class="p-b-30"><input type ="radio" name ="fees" id ="hourly"><label for="hourly" class="p-r-80"><span class="fee"></span>Hourly</label> <input type ="radio" name ="fees" id ="weekly" checked="true"><label for="weekly" class="p-r-80"><span class="fee"></span>Weekly</label><input type ="radio" name ="fees"  id ="monthly"><label for="monthly" class="p-r-80"><span class="fee"></span>Monthly</label></div>
+                  <div><input type ="radio" name ="fees" id ="yearly"><label class="p-r-90" for="yearly"><span class="fee"></span>Yearly</label><input type ="radio" name ="fees" id ="percourse"><label for="percourse"><span class="fee"></span>Percourse</label></div>
                 </div>
-              <div class="thumb-up col-3">
-                  <!-- <img src="img/thumb-up.png" alt="Thumb up"> -->
-                </div>
+              <!-- <div class="thumb-up col-3">
+                  <img src="img/thumb-up.png" alt="Thumb up">
+                </div> -->
               </div>
                
               
               <div class="row field">
               <div class="col-12 radio-style">
-              <div><input type="text" class="feestructure" value="Hours per day"><input type="text" class="feestructure" value="No of day/week"><input type="text" class="feestructure" value="Hours per month" disabled="disabled"><input type="text" class="feestructure" value="No of course" disabled="disabled"></div>
+              <div><input type="text" class="feestructure" id ="hours" value="Hours per day" disabled="disabled"><input type="text" class="feestructure" id ="week" value="No of day/week" disabled="disabled"><input type="text" class="feestructure" id ="month" value="Hours per month" disabled="disabled"><input type="text" class="feestructure" id="course" value="No of course" disabled="disabled"></div>
               </div>
             
               </div>
@@ -176,23 +176,23 @@
 
              
               <div class="row field">
-                <div class="col-9 radio-style">
+                <div class="col-12 radio-style">
                   <p class="label-text" for="">Duration of each class</p>
-                  <div class="p-b-30"><input type ="radio" name ="duration"   id ="decimal" checked="true" disabled="disabled"><label for="decimal"><span class="class"></span>0.5</label> <input type ="radio" name ="duration"   id ="on" disabled="disabled"><label for="on"><span class="class"></span>1.0</label><input type ="radio" name ="duration"  id ="one5" disabled="disabled"><label for="one5"><span class="class"></span>1.5</label></div>
+                  <div class="p-b-30"><input type ="radio" name ="duration"   id ="decimal" disabled="disabled"><label for="decimal"><span class="class"></span>0.5</label> <input type ="radio" name ="duration"   id ="on" checked="true" disabled="disabled"><label for="on"><span class="class"></span>1.0</label><input type ="radio" name ="duration"  id ="one5" disabled="disabled"><label for="one5"><span class="class"></span>1.5</label></div>
                   <div><input type ="radio" name ="duration"   id ="to" disabled="disabled"><label class="p-r-125" for="to"><span class="class"></span>2</label><input type ="radio" name ="duration"   id ="two5" disabled="disabled"><label for="two5"><span class="class"></span>2.5+</label></div>
                 </div>              
-               <div class="thumb-up col-3">
-                  <!-- <img src="img/thumb-up.png" alt="Thumb up"> -->
-               </div>  
+              <!--  <div class="thumb-up col-3">
+                  <img src="img/thumb-up.png" alt="Thumb up">
+               </div>  --> 
               </div>
               
               <div class="row field">
-              <div class="col-9">
+              <div class="col-12">
                   <a href ="tutor2.html" class="btn tutorbtn" value='' disabled="disabled">SAVE & RATE YOUR TUTOR</a>
                 </div>
-                <div class="thumb-up col-3">
-                  <!-- <img src="img/thumb-up.png" alt="Thumb up">  -->
-                </div>
+                <!-- <div class="thumb-up col-3">
+                  <img src="img/thumb-up.png" alt="Thumb up"> 
+                </div> -->
                 </div>
               </div>
                </btst-pane>

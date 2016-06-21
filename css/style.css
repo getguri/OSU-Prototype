@@ -1143,7 +1143,7 @@ img.ng-hide-remove {
 }
 
 @media only screen and (max-width: 800px){
-#firstStepTutor .easy-autocomplete{
+.easy-autocomplete{
     width:356px !important;
 }
 #firstStepTutor .tutorbtn {
@@ -1156,16 +1156,20 @@ img.ng-hide-remove {
 }  
 
 .easy-autocomplete{
-    width:474px !important;
+    width:680px !important;
 }
 
 
 
 #firstStepTutor .feestructure{
-  width:21%;
-  height:30px;
+  width:148px;
+  height:40px;
   margin-right:17px;
   border-radius:4px;
+  color: rgba(73, 84, 97, 0.502);
+  box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
 }
 
 #time-range p {
@@ -1260,7 +1264,7 @@ img.ng-hide-remove {
     box-shadow: 0 1px 1px 1px rgba(22, 73, 163, 0.7) inset, 0 1px 0 0 #FFF;
 }
 .ui-slider-horizontal .ui-slider-handle {
-    top: -.5em;
+    top: -.6em;
     margin-left: -.6em;
 }
 .ui-slider a:focus {
@@ -1275,6 +1279,9 @@ img.ng-hide-remove {
   width: 600px;
 }
 .slider-time2{
-  width:80px;
+  width:85px;
   height:40px;
+  box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
 }

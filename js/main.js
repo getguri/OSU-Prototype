@@ -243,6 +243,12 @@ $(document).ready(function(){
 	$('#starrating .edit').click(function(){
 		$(this).parents('.contents').find('input,select,textarea,div').attr('disabled', false);
 		$('#starrating').removeClass('disabled');
+        if ($("#weekly").is(":checked")) {
+              $("#hours").attr('disabled', false);
+              $("#week").attr('disabled', false);
+              $("#month").attr('disabled', true);
+              $("#course").attr('disabled', true);
+         }
 	});
 
 	/* disabled button default */
@@ -251,6 +257,38 @@ $(document).ready(function(){
 			return false	
 		}
 	});	
+
+    
+
+    $("#hourly").click(function(){
+     $("#hours").attr('disabled', false);
+      $("#week").attr('disabled', true);
+     $("#month").attr('disabled', true);
+      $("#course").attr('disabled', true);
+    });    
+
+    $("#weekly").click(function(){
+     $("#hours").attr('disabled', false);
+     $("#week").attr('disabled', false);
+     $("#month").attr('disabled', true);
+      $("#course").attr('disabled', true);
+    });
+
+    $("#monthly").click(function(){
+        $("#hours").attr('disabled', true);
+        $("#week").attr('disabled', true);
+        $("#month").attr('disabled', false);
+        $("#course").attr('disabled', true);
+    });
+
+     $("#percourse").click(function(){
+         $("#hours").attr('disabled', true);
+        $("#week").attr('disabled', true);
+        $("#month").attr('disabled', true);
+        $("#course").attr('disabled', false);
+    });
+
+
 
      if ($("#evening").is(":checked")) {
         $('.slider-time2').val("6:00 PM");
