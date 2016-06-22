@@ -1143,19 +1143,16 @@ img.ng-hide-remove {
     font-size: 20px !important;
   } 
   .easy-autocomplete{
-    width:356px !important;
+    width:645px !important;
 }
 }
 
-/*@media only screen and (max-width: 800px){
-#firstStepTutor .tutorbtn {
-    height:40px;
-    font-size:11px;
+@media only screen and (min-width: 700px){
+.easy-autocomplete{
+    width:680px !important;
+}
  } 
-  #firstStepTutor .p-r-85{
-    padding-right:140px !important;
- }
-} */ 
+
 
 .easy-autocomplete{
     width:680px;
