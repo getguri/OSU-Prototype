@@ -246,7 +246,6 @@ $(document).ready(function(){
 	});	
 
     
-
     $("#hourly").click(function(){
      $("#hours").attr('disabled', false);
       $("#week").attr('disabled', true);

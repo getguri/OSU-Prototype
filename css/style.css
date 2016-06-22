@@ -583,8 +583,14 @@ width:300px;
 .p-r-80{
     padding-right: 80px !important;
 }
+.p-r-82{
+    padding-right: 82px !important;
+}
 .p-r-85{
     padding-right: 85px !important;
+}
+.p-r-87{
+    padding-right: 87px !important;
 }
 .p-r-90{
     padding-right: 90px !important;
@@ -1094,10 +1100,6 @@ img.ng-hide-remove {
   font-weight: 700;
 }
 
-.easy-autocomplete{
-    width:712px !important;
-}
-
 .error-tooltips {
   position: absolute;
   top: -50px;
@@ -1166,10 +1168,11 @@ img.ng-hide-remove {
   height:40px;
   margin-right:17px;
   border-radius:4px;
-  color: rgba(73, 84, 97, 0.502);
+  color: #9A9DA0;
   box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
   -webkit-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+  background-color: #FFFFFF;
 }
 
 #time-range p {
