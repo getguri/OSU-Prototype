@@ -1138,7 +1138,7 @@ img.ng-hide-remove {
   margin-bottom: 5px;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (min-width: 700px){
   #firstStepRegistration .col-6.f-s-30 {
     font-size: 20px !important;
   } 
@@ -1147,7 +1147,7 @@ img.ng-hide-remove {
 }
 }
 
-@media only screen and (max-width: 800px){
+/*@media only screen and (max-width: 800px){
 #firstStepTutor .tutorbtn {
     height:40px;
     font-size:11px;
@@ -1155,7 +1155,7 @@ img.ng-hide-remove {
   #firstStepTutor .p-r-85{
     padding-right:140px !important;
  }
-}  
+} */ 
 
 .easy-autocomplete{
     width:680px;
