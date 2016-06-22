@@ -577,6 +577,10 @@ width:300px;
 .p-r-70{
     padding-right: 70px !important;
 }
+
+.p-r-72{
+    padding-right: 72px !important;
+}
 .p-r-75{
     padding-right: 75px !important;
 }
@@ -614,7 +618,9 @@ width:300px;
     margin-bottom: 115px !important;
 }
 
-
+.f-s-15{
+    font-size: 15px !important;
+}
 .f-s-20{
     font-size: 20px !important;
 }
@@ -986,10 +992,7 @@ p.error {
   font-size: 13px;
   display: none;
 }
-#LikeAboutTutor textarea,
-#suggestyourtutor textarea {
-  height: 87px;
-}
+
 
 #LikeAboutTutor label,
 #suggestyourtutor label {
@@ -1152,6 +1155,14 @@ img.ng-hide-remove {
 #firstStepTutor .feestructure{
   width:113px !important;
 }
+#LikeAboutTutor textarea,
+#suggestyourtutor textarea {
+  height:70px;
+}
+#LikeAboutTutor .form-control,
+#suggestyourtutor .form-control {
+  width:645px;
+}
 }
 
 @media only screen and (min-width: 1100px){
@@ -1160,6 +1171,10 @@ img.ng-hide-remove {
 }
 #firstStepTutor .feestructure{
   width:148px !important;
+}
+#LikeAboutTutor textarea,
+#suggestyourtutor textarea {
+  height:87px;
 }
  } 
 
@@ -1294,4 +1309,33 @@ img.ng-hide-remove {
   box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
   -webkit-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+}
+
+#secondStepTutor .numbergrade{
+  height:40px;
+  border-radius:4px;
+  color:#FFFFFF;
+  width:113px;
+  box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+}
+
+#secondStepTutor .head,.subject{
+  color:#A1ACA9;
+}
+
+#secondStepTutor .headline{
+  color:#000000;
+}
+
+#secondStepTutor .rateheadline{
+  color:#8A9DB2;
+  font-weight:700;
+}
+
+#secondStepTutor .textlabel{
+  color:#000000;
+  font-weight:200
+
 }
