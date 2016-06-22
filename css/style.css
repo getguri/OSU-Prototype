@@ -556,7 +556,7 @@ width:300px;
 }
 
 .p-t-30{
-    padding-top:30px;
+    padding-top:30px !important;
 }
 
 .p-r-3{
@@ -600,6 +600,10 @@ width:300px;
 }
 .p-t-5{
     padding-top: 5px;
+}
+
+.p-t-16{
+    padding-top: 16px !important;
 }
 
 .m-b-20{
