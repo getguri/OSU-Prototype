@@ -1145,6 +1145,9 @@ img.ng-hide-remove {
   .easy-autocomplete{
     width:645px !important;
 }
+#firstStepTutor .feestructure{
+  width:113px;
+}
 }
 
 @media only screen and (min-width: 1100px){
