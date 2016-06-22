@@ -85,19 +85,6 @@ app.controller('myCtrl', function($scope) {
     $scope.admissions = false;
     $scope.careers = false;
     //$scope.counter = 0;
-}).controller('sliderCtrl', function ($scope) {
-  
-    //Slider with selection bar
-    $scope.slider_visible_bar = {
-        value: 11.00,
-
-        options: {
-            showSelectionBar: true
-        }
-    };
-
- $scope.slider_visible_bar.value = parseFloat($scope.slider_visible_bar.value).toFixed(2);
-   
 });
 
 $(document).ready(function(){
@@ -158,8 +145,8 @@ $(document).ready(function(){
 
     /*Career you are interested in search field*/
 		$('#careersInterestedInAdded').on('click', '.close', function(){
- 		$(this).parent().remove();
- 	});
+ 		     $(this).parent().remove();
+ 	    });
 
  	var careerConsider = {
 		data:[
@@ -340,7 +327,6 @@ $(document).ready(function(){
             $('.slider-time2').val(hours2 + ':' + minutes2+' AM');
         }
         else{
-            console.log($('.slider-time2').val());
             $('.slider-time2').val(hours2 + ':' + minutes2+' PM');
             if($('.slider-time2').val()=="0.00 PM"){
                 $('.slider-time2').val("12.00 PM");
