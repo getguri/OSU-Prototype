@@ -1142,12 +1142,12 @@ img.ng-hide-remove {
   #firstStepRegistration .col-6.f-s-30 {
     font-size: 20px !important;
   } 
+  .easy-autocomplete{
+    width:356px !important;
+}
 }
 
 @media only screen and (max-width: 800px){
-.easy-autocomplete{
-    width:356px !important;
-}
 #firstStepTutor .tutorbtn {
     height:40px;
     font-size:11px;
