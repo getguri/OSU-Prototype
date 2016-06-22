@@ -519,11 +519,11 @@ textarea{
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
   font-size: 20px;
-  color: darkgrey;
+  color: #95A0A5;
   border: none;
   text-decoration: none;
   text-align:center;
-  background-color: lightgrey;
+  background-color: #BCC5C9;
 }
 
 .bg-color{
@@ -1179,7 +1179,7 @@ img.ng-hide-remove {
 }
 .ui-slider-horizontal {
     height: 12px;
-    background: #D7D7D7;
+    background: #C3C3C3;
     border: 1px solid #BABABA;
     box-shadow: 0 1px 0 #FFF, 0 1px 0 #CFCFCF inset;
     clear: both;
