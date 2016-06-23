@@ -87,6 +87,8 @@ app.controller('myCtrl', function($scope) {
     //$scope.counter = 0;
 });
 
+"use strict"
+
 $(document).ready(function(){
 
     $('#firstStepRegistration input').on('blur change', function(){
@@ -273,8 +275,6 @@ $(document).ready(function(){
         $("#month").attr('disabled', true);
         $("#course").attr('disabled', false);
     });
-
-
 
      if ($("#evening").is(":checked")) {
         $('.slider-time2').val("6:00 PM");
