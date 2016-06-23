@@ -1209,6 +1209,9 @@ img.ng-hide-remove {
     padding-right: 22px !important;
     
   }
+  #scale span.p-r-40{
+    padding-right: 25px !important;
+  }
   .p-r-30{
     padding-right: 17px !important;
   }
@@ -1284,6 +1287,13 @@ img.ng-hide-remove {
   .p-r-40{
     padding-right: 79px !important
     
+  }
+
+  #scale span.p-r-40{
+    padding-right: 40px !important;
+  }
+   #scale span.p-r-45{
+    padding-right: 45px !important;
   }
   .p-r-30{
     padding-right: 30px !important
