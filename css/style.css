@@ -1247,14 +1247,14 @@ img.ng-hide-remove {
 }
 
 .ipadfees{
-  padding-right:80px !important;
+  padding-right:73px !important;
 }
 
 .p-r-82{
   padding-right: 82px !important;
 }
 .p-r-87{
-  padding-right: 87px !important;
+  padding-right: 80px !important;
 }
 .slider-time2{
   width:85px !important;
@@ -1280,7 +1280,10 @@ img.ng-hide-remove {
   font-size:16px !important;
   text-align:center;
 }
+.morninglabel{
+  padding-right: 42px !important;
  } 
+}
 
 
 .easy-autocomplete{
