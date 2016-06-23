@@ -1256,6 +1256,9 @@ img.ng-hide-remove {
  } 
  .fromtext{
   margin-right:6px !important;
+}
+  .totext{
+
  }
 }
 
@@ -1339,9 +1342,11 @@ img.ng-hide-remove {
  } 
  .fromtext{
   margin-right:6px !important;
-  padding-right: o !important;
+  padding-right: 0 !important;
  }
-
+.totext{
+    padding-left: 0 !important;
+ }
 }
 
 
