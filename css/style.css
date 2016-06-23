@@ -628,12 +628,18 @@ width:300px;
     margin-bottom: 20px !important;
 }
 
+.m-b-25{
+    margin-bottom: 25px !important;
+}
 .m-b-60{
     margin-bottom: 60px !important;
 }
 
 .m-b-115{
     margin-bottom: 115px !important;
+}
+.m-b-200{
+    margin-bottom: 200px !important;
 }
 
 .f-s-15{
@@ -1510,4 +1516,14 @@ img.ng-hide-remove {
   padding-right: 0 !important;
   padding-left: 0 !important;
   padding-bottom: 10px !important;
+}
+
+.offer{
+  font-size:16px;
+  font-weight:500;
+  color:#919FAE;
+}
+
+.thankyounotes{
+  color:#34383D;
 }
