@@ -103,6 +103,7 @@ body {
     box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
     -webkit-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
     -moz-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+    margin-top:8px !important;
 }
 
 .fr {
@@ -1160,6 +1161,7 @@ img.ng-hide-remove {
 }
   .easy-autocomplete{
     width:480px !important;
+    margin-top: 3px !important;
 }
 #firstStepTutor .feestructure{
   width:98px !important;
@@ -1231,6 +1233,7 @@ img.ng-hide-remove {
 @media only screen and (min-width: 1100px){
 .easy-autocomplete{
     width:645px !important;
+    margin-top:5px !important;
 }
 #firstStepTutor .feestructure{
   width:141px !important;
