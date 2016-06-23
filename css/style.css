@@ -1527,3 +1527,7 @@ img.ng-hide-remove {
 .thankyounotes{
   color:#34383D;
 }
+
+.transform{
+  text-transform: none !important;
+}
