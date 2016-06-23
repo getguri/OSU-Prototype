@@ -1231,6 +1231,9 @@ img.ng-hide-remove {
 }
 
 @media only screen and (min-width: 1100px){
+  #firstStepRegistration .col-6.f-s-30 {
+    font-size: 30px !important;
+  } 
 .easy-autocomplete{
     width:645px !important;
     margin-top:5px !important;
