@@ -349,8 +349,8 @@ textarea{
 .fields label {
     /*display: block;*/
     font-size: 16px;
-    margin-bottom: 4px;
-    font-weight: 700;
+    margin-bottom: 10px;
+    font-weight: 300;
 }
 
 .lbl{
@@ -368,7 +368,7 @@ textarea{
 
 .field .text {
     font-size:18px;
-    margin-bottom: 7px;
+    margin-bottom: 25px;
 }
 
 .fields .field .thumb-up {
@@ -931,8 +931,7 @@ width:300px;
 
 .label-text {
   font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 28px;
+  font-weight: 300;
 }
 .star {
     color: red;
@@ -1163,7 +1162,7 @@ img.ng-hide-remove {
     width:480px !important;
 }
 #firstStepTutor .feestructure{
-  width:113px !important;
+  width:98px !important;
 }
 #LikeAboutTutor textarea,
 #suggestyourtutor textarea {
@@ -1177,6 +1176,40 @@ img.ng-hide-remove {
   padding-right:20px !important;
 }
 
+.ipadstudents{
+  padding-right:96px !important;
+}
+
+.ipadfees{
+  padding-right:71px !important;
+}
+
+.p-r-82{
+  padding-right: 72px !important;
+}
+
+.p-r-87{
+  padding-right: 76px !important;
+}
+.slider-time2{
+  width:62px !important;
+  }
+  #slider-range{
+    width:68% !important;
+  }
+  .p-r-45{
+    padding-right: 32px !important;
+  }
+  .p-r-40{
+    padding-right: 27px !important;
+    
+  }
+  .p-r-30{
+    padding-right: 17px !important;
+  }
+  .p-r-125{
+    padding-right: 114px !important;
+  }
 }
 
 @media only screen and (min-width: 1100px){
@@ -1202,7 +1235,40 @@ img.ng-hide-remove {
   padding-right:40px !important;
 }
 
+.ipadstudents{
+  padding-right:106px !important;
+}
 
+.ipadfees{
+  padding-right:80px !important;
+}
+
+.p-r-82{
+  padding-right: 82px !important;
+}
+.p-r-87{
+  padding-right: 87px !important;
+}
+.slider-time2{
+  width:85px !important;
+  }
+ #slider-range{
+    width:92% !important;
+  } 
+
+  .p-r-45{
+    padding-right: 45px !important
+  }
+  .p-r-40{
+    padding-right: 40px !important
+    
+  }
+  .p-r-30{
+    padding-right: 30px !important
+  }
+  .p-r-125{
+    padding-right: 125px !important;
+  }
  } 
 
 
