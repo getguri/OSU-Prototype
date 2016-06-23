@@ -1208,7 +1208,11 @@ img.ng-hide-remove {
     padding-right: 17px !important;
   }
   .p-r-125{
-    padding-right: 114px !important;
+    padding-right: 113px !important;
+  }
+  .paddingstar{
+    padding-left: 15px !important;
+    padding-right: 5px !important;
   }
 }
 
