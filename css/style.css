@@ -1488,16 +1488,21 @@ img.ng-hide-remove {
 
 #secondStepTutor .textlabel{
   color:#000000;
-  font-weight:200
+  font-weight:500
 
 }
 
 .fromtext{
+  font-size: 15px;
+  color:#919FAE;
   text-align:center;
   padding-right: 0 !important;
+  padding-left: 0 !important;
   padding-bottom: 10px !important;
 }
 .totext{
+  font-size: 15px;
+  color:#919FAE;
   text-align:center;
   padding-right: 0 !important;
   padding-left: 0 !important;
