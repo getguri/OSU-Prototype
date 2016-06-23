@@ -1214,6 +1214,9 @@ img.ng-hide-remove {
     padding-left: 15px !important;
     padding-right: 0 !important;
   }
+  #firstStepTutor .feestructure{
+    text-align:center;
+  }
 }
 
 @media only screen and (min-width: 1100px){
@@ -1273,6 +1276,10 @@ img.ng-hide-remove {
   .p-r-125{
     padding-right: 125px !important;
   }
+#firstStepTutor .feestructure{
+  font-size:16px !important;
+  text-align:center;
+}
  } 
 
 
@@ -1426,6 +1433,7 @@ img.ng-hide-remove {
 #secondStepTutor .headline{
   color:#000000;
   font-weight:700;
+  margin-bottom:7px !important;
 }
 
 #secondStepTutor .rateheadline{
