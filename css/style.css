@@ -574,6 +574,9 @@ width:300px;
 .p-r-45{
     padding-right: 45px !important;
 }
+.p-r-65{
+    padding-right: 65px !important;
+}
 .p-r-70{
     padding-right: 70px !important;
 }
@@ -1085,9 +1088,9 @@ img.ng-hide-remove {
 #secondStepTutor .tutorbtn {
   background-color:#64bd8c;
   color:#FFFFFF;
-  height:50px;
-  width:35%;
-  font-size:20px;
+  height:41px;
+  width:210px;
+  font-size:23px;
 }
 
 #firstStepTutor .tutorbtn {
@@ -1165,7 +1168,7 @@ img.ng-hide-remove {
 }
 #LikeAboutTutor .form-control,
 #suggestyourtutor .form-control {
-  width:610px;
+  width:480px;
 }
 }
 
@@ -1182,7 +1185,7 @@ img.ng-hide-remove {
 }
 #LikeAboutTutor .form-control,
 #suggestyourtutor .form-control {
-  width:690px;
+  width:650px;
 }
 
  .accordion-group{
