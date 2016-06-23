@@ -368,7 +368,7 @@ textarea{
 
 .field .text {
     font-size:18px;
-    margin-bottom: 25px;
+    margin-bottom: 7px;
 }
 
 .fields .field .thumb-up {
@@ -564,6 +564,9 @@ width:300px;
 }
 .p-r-5{
     padding-right: 5px;
+}
+.p-r-30{
+    padding-right: 30px !important;
 }
 .p-r-35{
     padding-right: 35px !important;
@@ -1157,7 +1160,7 @@ img.ng-hide-remove {
   width:539px !important;
 }
   .easy-autocomplete{
-    width:645px !important;
+    width:480px !important;
 }
 #firstStepTutor .feestructure{
   width:113px !important;
@@ -1170,14 +1173,18 @@ img.ng-hide-remove {
 #suggestyourtutor .form-control {
   width:480px;
 }
+.ipad{
+  padding-right:20px !important;
+}
+
 }
 
 @media only screen and (min-width: 1100px){
 .easy-autocomplete{
-    width:680px !important;
+    width:645px !important;
 }
 #firstStepTutor .feestructure{
-  width:148px !important;
+  width:141px !important;
 }
 #LikeAboutTutor textarea,
 #suggestyourtutor textarea {
@@ -1191,6 +1198,11 @@ img.ng-hide-remove {
  .accordion-group{
   width:710px !important;
 }
+.ipad{
+  padding-right:40px !important;
+}
+
+
  } 
 
 
@@ -1312,7 +1324,7 @@ img.ng-hide-remove {
 }
 
 #slider-range {
-  width: 93%;
+  width: 92%;
   margin: 0 5px;
 }
 #time-range {
@@ -1324,6 +1336,7 @@ img.ng-hide-remove {
   box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
   -webkit-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
+  margin-left:10px;
 }
 
 #secondStepTutor .numbergrade{
