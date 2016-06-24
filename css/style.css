@@ -1264,8 +1264,9 @@ img.ng-hide-remove {
  .fromtext{
   margin-right:6px !important;
 }
-  .totext{
 
+ .progress-bar-style .step-up{
+  right: 30px !important;
  }
 }
 
@@ -1358,8 +1359,10 @@ img.ng-hide-remove {
 .totext{
     padding-left: 0 !important;
  }
+ .progress-bar-style .step-up{
+  right: 60px !important;
+ }
 }
-
 
 .easy-autocomplete{
     width:680px;
