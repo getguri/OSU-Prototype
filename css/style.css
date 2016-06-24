@@ -278,7 +278,7 @@ textarea{
     border-radius: 50%;
     border: 5px solid #c3ceda;
     background-color: #ffffff;
-    right: 30px;
+    right: 60px;
     top: -45px;
 }
 
@@ -373,7 +373,7 @@ textarea{
 }
 
 .fields .field .thumb-up {
-    padding-left: 40px;
+    padding-left: 95px;
 }
 
 .subjects  {
@@ -1566,4 +1566,5 @@ img.ng-hide-remove {
 }
 .formname{
   color:#a6b0bc;
+  font-family:Lato Hairline;
 }
