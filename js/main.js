@@ -277,21 +277,18 @@ $(document).ready(function(){
     });
 
      if ($("#evening").is(":checked")) {
-        $('.slider-time2').val("6:00 PM");
+        $('.slider-time2').val("12:00 PM");
     }
-    $("#morning").click(function(){
-        if($('.slider-time2').val()=="6:00 PM")
-            {
-                $('.slider-time2').val("6:00 AM");
-            }      
+    $("#morning").click(function(){   
+         if($('.slider-time2').val().substr(6,1)=="P"){
+                $('.slider-time2').val($('.slider-time2').val().replace("P","A"));
+         };  
+         if($('.slider-time2').val().substr(0,5)=="12:00"){
+            $('.slider-time2').val($('.slider-time2').val().replace("12:00","0:00"));
+         }   
     });
 
-    $("#evening").click(function(){
-        if($('.slider-time2').val()=="00:00 PM")
-            {
-                $('.slider-time2').val("12:00 PM");
-            }      
-    });
+    
 
     $("#slider-range").slider({
     range: true,
@@ -327,9 +324,6 @@ $(document).ready(function(){
         }
         else{
             $('.slider-time2').val(hours1 + ':' + minutes1+' PM');
-            if($('.slider-time2').val()=="0.00 PM"){
-                $('.slider-time2').val("12.00 PM");
-            }
         }
     }
 });
