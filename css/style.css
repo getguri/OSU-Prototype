@@ -416,7 +416,7 @@ textarea{
 }
 
 .fields .thumb-align .thumb-up img {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .interested-List {
@@ -1142,7 +1142,7 @@ img.ng-hide-remove {
 
 .error-tooltips {
   position: absolute;
-  top: -50px;
+  top: 20px;
   left: 0;
   background-color: #ffffff;
   padding: 15px 19px;
@@ -1150,7 +1150,7 @@ img.ng-hide-remove {
   border: 1px solid rgb(195, 206, 218);
   color: red;
   font-size: 13px;
-  width: 100%;
+ /* width: 100%;*/
   box-sizing: border-box;
   /*display: none;*/
   margin: 0;

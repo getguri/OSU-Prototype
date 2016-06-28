@@ -74,6 +74,10 @@ directive('btstPane', function () {
 
 app.controller('myCtrl', function($scope) {
 	$scope.name = '';
+    $scope.fee = '';
+    $scope.like = '';
+    $scope.suggest = '';
+    $scope.from = '';
 	$scope.career ='';
 	$scope.address='';
 	$scope.location = false;

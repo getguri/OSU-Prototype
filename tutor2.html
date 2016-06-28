@@ -143,26 +143,29 @@
                 </div> -->
               </div>
              
-              <div class="padding field p-l-0" id="LikeAboutTutor">
-              <div class="col-9">
+              <div class="row field thumb-align" style="position:relative" id="LikeAboutTutor">
+              <div class="col-12">
                 <label class="textlabel" for="">What do you like about your Tutor? <span class="star">*</span></label>
-                <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                <textarea name="" id="" cols="30" rows="3" class="form-control" ng-model ="like" ></textarea>
                 <p class="error">Please write comment</p>  
-              </div>
+              </div>  <span class="thumb-up" style="position:absolute;right:-120px">
+                  <img ng-show ="like" src="img/thumb-up.png" alt="Thumb up">
+                </span> 
               </div>
               
 
-              <div class="padding field p-l-0" id="suggestyourtutor">
+              <div class="row field thumb-align" style="position:relative" id="suggestyourtutor">
               <div class="col-12">
                 <label class="textlabel" for="">What improvements can you suggest your Tutor? <span class="star">*</span></label>
-                <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
-                <p class="error">Please write comment</p>  
-              </div>
-               <!-- <div class="thumb-up col-3">
-                </div> -->
+                <textarea name="" id="" ng-model="suggest" cols="30" rows="3" class="form-control"></textarea>
+                <p class="error">Please write comment</p> 
+              </div><span class="thumb-up" style="position:absolute;right:-120px">
+                  <img ng-show ="suggest" src="img/thumb-up.png" alt="Thumb up">
+                </span> 
+              
               </div>
 
-              <div class="padding field p-l-0" id="gradeimprove">
+              <div class="row field" id="gradeimprove">
               <div class="col-12">
                  <label class="textlabel">Have you seen improvement in your grade with this tutor?<span class="star">*</span></label>
                 <div class="radio-style">
@@ -171,23 +174,22 @@
                 <input type="radio" name="careerImpactBySubject" id="careerImpactBySubject_2" checked="true">
                   <label class="p-r-75" for="careerImpactBySubject_2"><span class="grade"></span>Yes Absolutely</label>
                 </div>
+              </div> 
+             
               </div>
-              <!--  <div class="thumb-up col-3">
-                </div> -->
-              </div>
-              <div class="padding field p-l-0">
-              <div class="col-9">
+              <div class="row field">
+              <div class="col-12">
             <label for="" class="textlabel" style="display:block">Change in grade</label>
               </div>
               </div>
-                <div class="row field">
+                <div class="row field" style="position:relative">
                   
                  <div class="col-1 fromtext">
                  
                    from
                    </div>
                   <div class="col-2 p-l-0 p-r-0">
-                    <input type="text" size="8" class="numbergrade">
+                    <input type="text" ng-model="from" size="8" class="numbergrade">
                   </div>
                   <div class="col-2 totext">
                     to
@@ -197,7 +199,9 @@
                     <input type="text"  size="8" class="numbergrade">
                   </div>
                   <div class="col-5">
-                  </div>
+                  </div><span class="thumb-up" style="position:absolute;right:-120px">
+                  <img ng-show ="from" src="img/thumb-up.png" alt="Thumb up">
+                </span>
                 </div>
 
               <div class="padding field p-l-0">
@@ -209,8 +213,7 @@
               <div class="col-9 radio-style m-t-34 m-b-60">
                 <input type ="radio" name ="thumbrating" id ="thumbup" checked="true"><label class="thumb p-r-35" for="thumbup"><span class="yes"></span><span class="m-l-30">Yes!</span></label><input type ="radio" name ="thumbrating" id ="thumbdown"><label class="thumb" for="thumbdown"><span class="no"></span><span class="m-l-30">No</span></label>
                 </div>
-              <!--  <div class="thumb-up col-3">
-                  </div> -->
+              
                   
               </div>
               
@@ -218,9 +221,7 @@
               <div class="col-12">
             <!-- <i class =" fa fa-plus-circle"></i> --><button value='' id ="addAccordion" class="btn tutorbtn"><i class =" fa fa-plus-circle"></i>Add Another Tutor</button>
                 </div>
-                <!-- <div class="thumb-up col-3">
-                  <img src="img/thumb-up.png" alt="Thumb up"> 
-                </div> -->
+                
                 </div>
               </div>
               </div>
