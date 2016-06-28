@@ -829,7 +829,7 @@ a.thumbnail:hover,a.thumbnail:focus{border-color:#0088cc;-webkit-box-shadow:0 1p
 .accordion-heading{border-bottom:0;padding-top:16px;padding-bottom:16px;padding-left:15px}
 .accordion-heading .accordion-toggle{padding:16px 15px;}
 .accordion-toggle{cursor:pointer;color:#8A9DB2;font-size:20px;font-weight:700;}
-.accordion-inner{padding:9px 15px;border-top:1px solid #e5e5e5;}
+.accordion-inner{padding:9px 15px;border-top:1px solid #e5e5e5;margin-bottom:50px}
 .carousel{position:relative;margin-bottom:20px;line-height:1;}
 .carousel-inner{overflow:hidden;width:100%;position:relative;}
 .carousel-inner>.item{display:none;position:relative;-webkit-transition:0.6s ease-in-out left;-moz-transition:0.6s ease-in-out left;-o-transition:0.6s ease-in-out left;transition:0.6s ease-in-out left;}.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:block;line-height:1;}
