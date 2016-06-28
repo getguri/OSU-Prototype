@@ -1150,7 +1150,7 @@ img.ng-hide-remove {
   border: 1px solid rgb(195, 206, 218);
   color: red;
   font-size: 13px;
- /* width: 100%;*/
+  width: 200%;
   box-sizing: border-box;
   /*display: none;*/
   margin: 0;
@@ -1283,7 +1283,7 @@ img.ng-hide-remove {
     width:712px !important;
   }
 .easy-autocomplete{
-    width:645px !important;
+    width:680px !important;
     margin-top:5px !important;
 }
 #firstStepTutor .feestructure{
@@ -1295,7 +1295,7 @@ img.ng-hide-remove {
 }
 #LikeAboutTutor .form-control,
 #suggestyourtutor .form-control {
-  width:650px;
+  width:675px;
 }
 
  .accordion-group{
