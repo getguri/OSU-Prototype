@@ -11,9 +11,9 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/media.css">
         <link rel="stylesheet" href="css/easy-autocomplete.css">
         <link rel="stylesheet" href="css/easy-autocomplete.themes.css"> 
@@ -40,8 +40,8 @@
                 </div>
               </div>
        </header>
-            <btst-accordion>
-              <btst-pane title="PERSONAL DETAILS"  category="{name:'test'}">
+            <btst-accordion id ="accordion">
+              <btst-pane title="PERSONAL DETAILS">
                 <div class="f-s-20 p-b-10"><span><b>Class and Section </b> XI A</span><span class="p-l-30"><b>School </b> Gyan Bharati School</span></div>
                 <div class="f-s-20 p-b-10"><span><b>Roll Number </b> <span style="padding-left:53px">32</span></span><span class="p-l-46"><b>Email </b><span style="padding-left:15px"> shash@srijan.in</span></span></div>
                 <div class="f-s-20 p-b-10"><span><b>Mom </b> <span style="padding-left:37px">Neerja Bhullar</span></span><span class="p-l-30"><b>Dad </b> <span style="padding-left:30px">Sulakhhan Pandey</span></span></div>
@@ -51,11 +51,12 @@
               <btst-pane title="ACADEMIC DETAILS">
                 <div></div>
               </btst-pane>
-            <btst-pane class="contents" title="TUTOR">
+              </btst-accordion>
+             <div class="accordion-inner tutor">  
             <div class="fields">  
               <div class="row field tutor-rating">
-                <div class="col-1">
-                  <!-- <label class="field p-l-15" for="">TUTOR</label>   -->
+                <div class="col-1" style="margin-right:30px">
+                   <label class="field headtext" for="">TUTOR</label> 
                 </div>
                 <div class="col-11">
                   <div class="head"><span class="f-s-30" style="color:#01a4e7">RICHARD DAWKINS</span> London , UK</div>
@@ -73,14 +74,16 @@
               </div>
               <div class="col-5 paddingstar star-rating-wrap">
                 <div id="concept" class="star-rating-radio">
-                  <label for="star1" title="Sucks big time"><input type="radio" id="star1" name="rating" value="1" disabled="disabled"/></label>
-                  <label for="star2" title="Kinda bad"><input type="radio" id="star2" name="rating" value="2" disabled="disabled"/></label>
-                  <label for="star3" title="Meh"><input type="radio" id="star3" name="rating" value="3" disabled="disabled"/></label>
-                  <label for="star4" title="Pretty good"><input type="radio" id="star4" name="rating" value="4" disabled="disabled"/></label>
-                  <label for="star5" title="Rocks!" ><input type="radio" id="star5" name="rating" value="5" disabled="disabled"/></label>
+                  <label for="star1" title="Sucks big time"><input type="radio" id="star1" name="rating" value="1"/></label>
+                  <label for="star2" title="Kinda bad"><input type="radio" id="star2" name="rating" value="2"/></label>
+                  <label for="star3" title="Meh"><input type="radio" id="star3" name="rating" value="3" /></label>
+                  <label for="star4" title="Pretty good"><input type="radio" id="star4" name="rating" value="4"/></label>
+                  <label for="star5" title="Rocks!" ><input type="radio" id="star5" name="rating" value="5"/></label>
                 </div>
                 <p class="error">Please select rating</p>
               </div>
+              <!--  <div class="thumb-up col-3">
+                </div> -->
             </div>
               <div class="row field thumb-align">
                 <div class=" col-7 padding instructor-pro">
@@ -90,14 +93,15 @@
                 </div>
                 <div class="col-5 paddingstar star-rating-wrap">
                   <div id="easy" class="star-rating-radio">
-                    <label for="star6" title="Sucks big time"><input type="radio" id="star6" name="rating" value="1" disabled="disabled"/></label>
-                    <label for="star7" title="Kinda bad"><input type="radio" id="star7" name="rating" value="2" disabled="disabled"/></label>
-                    <label for="star8" title="Meh"><input type="radio" id="star8" name="rating" value="3" disabled="disabled"/></label>
-                    <label for="star9" title="Pretty good"><input type="radio" id="star9" name="rating" value="4" disabled="disabled"/></label>
-                    <label for="star10" title="Rocks!" ><input type="radio" id="star10" name="rating" value="5" disabled="disabled"/></label>
+                    <label for="star6" title="Sucks big time"><input type="radio" id="star6" name="rating" value="1"/></label>
+                    <label for="star7" title="Kinda bad"><input type="radio" id="star7" name="rating" value="2"/></label>
+                    <label for="star8" title="Meh"><input type="radio" id="star8" name="rating" value="3"/></label>
+                    <label for="star9" title="Pretty good"><input type="radio" id="star9" name="rating" value="4"/></label>
+                    <label for="star10" title="Rocks!" ><input type="radio" id="star10" name="rating" value="5"/></label>
                   </div>
                   <p class="error">Please select rating</p>
                 </div>
+                
               </div>
               <div class="row field thumb-align">
                 <div class=" col-7 padding instructor-pro">
@@ -107,14 +111,16 @@
                 </div>
                 <div class="col-5 paddingstar star-rating-wrap">
                   <div id="exam" class="star-rating-radio">
-                    <label for="star11" title="Sucks big time"><input type="radio" id="star11" name="rating" value="1" disabled="disabled"/></label>
-                    <label for="star12" title="Kinda bad"><input type="radio" id="star12" name="rating" value="2" disabled="disabled"/></label>
-                    <label for="star13" title="Meh"><input type="radio" id="star13" name="rating" value="3" disabled="disabled"/></label>
-                    <label for="star14" title="Pretty good"><input type="radio" id="star14" name="rating" value="4" disabled="disabled"/></label>
-                    <label for="star15" title="Rocks!" ><input type="radio" id="star15" name="rating" value="5" disabled="disabled"/></label>
+                    <label for="star11" title="Sucks big time"><input type="radio" id="star11" name="rating" value="1"/></label>
+                    <label for="star12" title="Kinda bad"><input type="radio" id="star12" name="rating" value="2"/></label>
+                    <label for="star13" title="Meh"><input type="radio" id="star13" name="rating" value="3"/></label>
+                    <label for="star14" title="Pretty good"><input type="radio" id="star14" name="rating" value="4"/></label>
+                    <label for="star15" title="Rocks!" ><input type="radio" id="star15" name="rating" value="5"/></label>
                   </div>
                   <p class="error">Please select rating</p>
                 </div>
+                <!-- <div class="thumb-up col-3">
+                </div> -->
               </div>
               <div class="row field thumb-align">
                   <div class=" col-7 padding instructor-pro">
@@ -125,20 +131,22 @@
                 </div>
                 <div class="col-5 paddingstar star-rating-wrap">
                   <div id="general" class="star-rating-radio">
-                    <label for="star16" title="Sucks big time"><input type="radio" id="star16" name="rating" value="1" disabled="disabled"/></label>
-                    <label for="star17" title="Kinda bad"><input type="radio" id="star17" name="rating" value="2" disabled="disabled"/></label>
-                    <label for="star18" title="Meh"><input type="radio" id="star18" name="rating" value="3" disabled="disabled"/></label>
-                    <label for="star19" title="Pretty good"><input type="radio" id="star19" name="rating" value="4" disabled="disabled"/></label>
-                    <label for="star20" title="Rocks!" ><input type="radio" id="star20" name="rating" value="5" disabled="disabled"/></label>
+                    <label for="star16" title="Sucks big time"><input type="radio" id="star16" name="rating" value="1"/></label>
+                    <label for="star17" title="Kinda bad"><input type="radio" id="star17" name="rating" value="2"/></label>
+                    <label for="star18" title="Meh"><input type="radio" id="star18" name="rating" value="3"/></label>
+                    <label for="star19" title="Pretty good"><input type="radio" id="star19" name="rating" value="4"/></label>
+                    <label for="star20" title="Rocks!" ><input type="radio" id="star20" name="rating" value="5"/></label>
                   </div>
                   <p class="error">Please select rating</p>
                 </div>
+               <!--  <div class="thumb-up col-3">
+                </div> -->
               </div>
              
               <div class="padding field p-l-0" id="LikeAboutTutor">
-              <div class="col-12">
+              <div class="col-9">
                 <label class="textlabel" for="">What do you like about your Tutor? <span class="star">*</span></label>
-                <textarea name="" id="" cols="30" rows="3" class="form-control" disabled="disabled"></textarea>
+                <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
                 <p class="error">Please write comment</p>  
               </div>
               </div>
@@ -147,25 +155,29 @@
               <div class="padding field p-l-0" id="suggestyourtutor">
               <div class="col-12">
                 <label class="textlabel" for="">What improvements can you suggest your Tutor? <span class="star">*</span></label>
-                <textarea name="" id="" cols="30" rows="3" class="form-control" disabled="disabled"></textarea>
+                <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
                 <p class="error">Please write comment</p>  
               </div>
+               <!-- <div class="thumb-up col-3">
+                </div> -->
               </div>
 
               <div class="padding field p-l-0" id="gradeimprove">
               <div class="col-12">
                  <label class="textlabel">Have you seen improvement in your grade with this tutor?<span class="star">*</span></label>
                 <div class="radio-style">
-                  <input type="radio" name="careerImpactBySubject" id="careerImpactBySubject_1" disabled="disabled">
+                  <input type="radio" name="careerImpactBySubject" id="careerImpactBySubject_1">
                   <label class="p-r-65" for="careerImpactBySubject_1"><span class="grade"></span>Not Yet</label>
-                  <input type="radio" name="careerImpactBySubject" id="careerImpactBySubject_2" disabled="disabled" checked="true">
+                <input type="radio" name="careerImpactBySubject" id="careerImpactBySubject_2" checked="true">
                   <label class="p-r-75" for="careerImpactBySubject_2"><span class="grade"></span>Yes Absolutely</label>
                 </div>
               </div>
+              <!--  <div class="thumb-up col-3">
+                </div> -->
               </div>
               <div class="padding field p-l-0">
-              <div class="col-12">
-              <label for="" class="textlabel" style="display:block">Change in grade</label>
+              <div class="col-9">
+            <label for="" class="textlabel" style="display:block">Change in grade</label>
               </div>
               </div>
                 <div class="row field">
@@ -175,14 +187,14 @@
                    from
                    </div>
                   <div class="col-2 p-l-0 p-r-0">
-                    <input type="text" size="8" class="numbergrade" disabled="disabled">
+                    <input type="text" size="8" class="numbergrade">
                   </div>
                   <div class="col-2 totext">
                     to
                   </div>
                   
                   <div class="col-2 p-l-0 p-r-0">
-                    <input type="text"  size="8" class="numbergrade"  disabled="disabled">
+                    <input type="text"  size="8" class="numbergrade">
                   </div>
                   <div class="col-5">
                   </div>
@@ -194,25 +206,25 @@
                     Would you recommend this tutor?
                   </label>
                 
-              <div class="col-12 radio-style m-t-34 m-b-60">
-                <input type ="radio" name ="thumbrating" id ="thumbup" checked="true" disabled="disabled"><label class="thumb p-r-35" for="thumbup"><span class="yes"></span><span class="m-l-30">Yes!</span></label><input type ="radio" name ="thumbrating" id ="thumbdown" disabled="disabled"><label class="thumb" for="thumbdown"><span class="no"></span><span class="m-l-30">No</span></label>
+              <div class="col-9 radio-style m-t-34 m-b-60">
+                <input type ="radio" name ="thumbrating" id ="thumbup" checked="true"><label class="thumb p-r-35" for="thumbup"><span class="yes"></span><span class="m-l-30">Yes!</span></label><input type ="radio" name ="thumbrating" id ="thumbdown"><label class="thumb" for="thumbdown"><span class="no"></span><span class="m-l-30">No</span></label>
                 </div>
-              
-                  
+              <!--  <div class="thumb-up col-3">
+                  </div> -->
                   
               </div>
               
                <div class="row field">
               <div class="col-12">
-                  <!-- <i class =" fa fa-plus-circle"></i> --><a href="tutor.html" value='' class="btn tutorbtn" disabled="disabled"><i class =" fa fa-plus-circle"></i>Add Another Tutor</a>
+                  <!-- <i class =" fa fa-plus-circle"></i> --><button value='' id ="addAccordion" class="btn tutorbtn"><i class =" fa fa-plus-circle"></i>Add Another Tutor</button>
                 </div>
-               <!--  <div class="thumb-up col-3">
+                <!-- <div class="thumb-up col-3">
                   <img src="img/thumb-up.png" alt="Thumb up"> 
                 </div> -->
                 </div>
               </div>
-               </btst-pane>
-              </btst-accordion>
+              </div>
+              
               <div class="action">  
                 <!-- <button class="btn btn-primary">Continue</button> -->
                 <button class="btn1 btn-primary1">Continue</button>

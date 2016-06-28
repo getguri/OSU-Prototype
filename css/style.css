@@ -562,8 +562,8 @@ width:300px;
     height:80px;
 }
 
-.p-t-30{
-    padding-top:30px !important;
+.p-t-10{
+    padding-top:10px !important;
 }
 
 .p-r-0{
@@ -647,6 +647,9 @@ width:300px;
 
 .f-s-15{
     font-size: 15px !important;
+}
+.f-s-22{
+    font-size: 22px !important;
 }
 .f-s-20{
     font-size: 20px !important;
@@ -1002,7 +1005,7 @@ width:300px;
 }
 
 .tutor-rating  {
-  padding: 20px 15px 25px;
+  padding: 20px 0 25px;
   border-bottom: 2px solid #c3ceda;
 }
 .instructor-pro .text {
@@ -1116,7 +1119,7 @@ img.ng-hide-remove {
   color:#FFFFFF;
   height:41px;
   width:210px;
-  font-size:23px;
+  font-size:20px;
 }
 
 #firstStepTutor .tutorbtn {
@@ -1500,7 +1503,7 @@ img.ng-hide-remove {
 #secondStepTutor .numbergrade{
   height:40px;
   border-radius:4px;
-  color:#FFFFFF;
+  /*color:#FFFFFF;*/
   width:113px;
   box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
   -webkit-box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.17);
@@ -1570,4 +1573,15 @@ img.ng-hide-remove {
 .formname{
   color:#a6b0bc;
   font-family:Lato Hairline;
+}
+
+.tutor{
+  width:680px;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+.headtext{
+  color:#8A9DB2;
+  font-size:20px !important;
+  font-weight:700 !important;
 }
