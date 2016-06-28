@@ -57,7 +57,7 @@
             <div class="fields">
             <div ng-controller="myCtrl">
              <label class="field headtext"  style="display:block" for="">TUTOR</label>   
-              <div class="row field">
+              <div class="row field" style="position:relative">
              
               <div class="col-3"> 
               <label for="">Salutation<span class="star">*</span></label>
@@ -72,6 +72,10 @@
                   <label for="">Full Name<span class="star">*</span></label>
                   <input type="text" class="form-control" id="name" name = "name" ng-model ="name" value="" placeholder="First and Last Name" required>
                 </div>
+                <span class="thumb-up" style="position:absolute;right:-120px">
+                <p class="error-tooltips" ng-show="myForm.name.$touched && myForm.name.$invalid"><span>Your name</span>Select salutation,Enter first & last name</p>
+                  <img ng-show ="name" src="img/thumb-up.png" alt="Thumb up">
+                </span>
                 <!-- <div class="thumb-up col-1">
                   <p class="error-tooltips" ng-show="myForm.name.$touched && myForm.name.$invalid"><span>Your name</span>Select salutation,Enter first & last name</p>
                   <img ng-show ="name" src="img/thumb-up.png" alt="Thumb up">
