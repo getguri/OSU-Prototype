@@ -1225,7 +1225,10 @@ img.ng-hide-remove {
 }
 #LikeAboutTutor .form-control,
 #suggestyourtutor .form-control {
-  width:675px;
+  width:480px;
+}
+.tutor{
+  width:545px !important;
 }
 .ipad{
   padding-right:19px !important;
@@ -1324,6 +1327,10 @@ img.ng-hide-remove {
 #LikeAboutTutor .form-control,
 #suggestyourtutor .form-control {
   width:675px;
+}
+
+.tutor{
+  width:712px !important;
 }
 
  .accordion-group{
