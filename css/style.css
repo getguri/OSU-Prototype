@@ -1131,10 +1131,10 @@ img.ng-hide-remove {
 }
 
  .tutorbtn1 {
-  background-color:#64bd8c;
-  color:#FFFFFF;
-  height:45px;
-  width:280px;
+  background-color:#64bd8c !important;
+  color:#FFFFFF !important;
+  height:45px !important;
+  width:280px !important;
   font-size:19px !important;
   padding-top:10px !important;
   padding-right:20px !important; 
