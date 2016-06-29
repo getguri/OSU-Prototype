@@ -89,6 +89,10 @@ app.controller('myCtrl', function($scope) {
     $scope.admissions = false;
     $scope.careers = false;
     //$scope.counter = 0;
+    $scope.settutor = false;
+    $scope.add = function(){
+        $scope.settutor = true;
+    };
 });
 
 "use strict"
@@ -197,7 +201,7 @@ $(document).ready(function(){
     $(document).on('click', "#addAccordion", function() {
          //var inputVal = $("#input").val();
         var newDiv = '<div id="tutorrating" class="accordion-heading">    <i class="fa fa-plus-square-o f-s-20"><span class="accordion-toggle ng-binding" data-toggle="collapse" data-parent="#accordion" href="#accordioncollapse3">TUTOR: <span style="color:#01a4e7">Dr. Richard Dawkins </span> </span></i><span class="edit fr p-t-30 p-r-35"></span>  </div>';
-        var content = '<div class="accordion-body collapse" id="accordioncollapse3"><div class="accordion-inner" ng-transclude=""><div class="fields"><div ng-controller="myCtrl"><!-- <label class="field p-l-15"  style="display:block" for="">TUTOR</label> --><div class="row field"><div class="col-3"><label for="">Salutation<span class="star">*</span></label><select name="salutation" id="" class="form-control" disabled="disabled" required><option disabled selected>--Select--</option><option value="XI">Mr.</option><option value="XII">Mrs.</option></select></div><div class="col-9"><label for="">Full Name<span class="star">*</span></label><input type="text" class="form-control" id="name" name = "name" ng-model ="name" value="" placeholder="First and Last Name" disabled="disabled" required></div><!-- <div class="thumb-up col-3" style="position:relative"><p class="error-tooltips" ng-show="myForm.name.$touched && myForm.name.$invalid"><span>Your name</span>Select salutation,Enter first & last name</p><img ng-show ="name" src="img/thumb-up.png" alt="Thumb up"></div> --></div><div class="row field"><div class="col-12 radio-style"><p class="label-text">Type of course<span class="star">*</span></p><input type ="radio" ng-model ="course" name ="course" value= "full" ng-checked="true" id ="full" disabled="disabled"><label class="p-r-40 ipad" for="full"><span class="course"></span> Full Course</label><input type ="radio" name ="course"  ng-model ="course" value= "crash" id ="crash" disabled="disabled"><label class="p-r-75 ipad" for="crash" ><span class="course"></span>Crash Course </label><input type ="radio" name ="course" ng-model ="course" value = "problem" id ="solving" disabled="disabled"><label class="p-r-40 ipad" for="solving"><span class="course"></span> Problem Solving</label></div></div></div></div> </div></div>';
+        var content = '<div class="accordion-body collapse" id="accordioncollapse3"><div class="accordion-inner" ng-transclude=""><div class="f-s-20 p-b-10"><span><b>Tutor Name </b> Dr. Richard Dawkins</span><span class="p-l-30"><b>Type of course </b> Full Course</span></div><div class="f-s-20 p-b-10"><span><b>Subjects </b> <span>Physics,Chemistry,Maths</span></span><span style="padding-left:17px"><b>Number of students </b><span> 1-3</span></span></div><div class="f-s-20 p-b-10"><span><b>Fees Structure </b> <span>Weekly</span></span><span style="padding-left:120px"><b>Fees Amount </b> <span style="padding-left:30px">Rs 2000</span></span></div>';
         $("#accordion").append('<div class="contents accordion-group ng-scope ng-isolate-scope" title="TUTOR">' + newDiv +content+'</div>') ;
 
     });
@@ -244,13 +248,15 @@ $(document).ready(function(){
 	$('#starrating .edit').click(function(){
 		$(this).parents('.contents').find('input,select,textarea,div,button').attr('disabled', false);
 		$('#starrating').removeClass('disabled');
-        if ($("#weekly").is(":checked")) {
+        
+	});
+
+    if ($("#weekly").is(":checked")) {
               $("#hours").attr('disabled', false);
               $("#week").attr('disabled', false);
               $("#month").attr('disabled', true);
               $("#course").attr('disabled', true);
          }
-	});
 
     $('#tutorrating .edit').click(function(){
         $(this).parents('.contents').find('input,select,textarea,div,button').attr('disabled', false);

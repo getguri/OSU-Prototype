@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="css/docs.min.css">
     </head>
     <body ng-app= "myApp">
-     <div class="container gray-bg" id="firstStepTutor">
+     <div class="container gray-bg" id="">
            <form name="myForm" action="tutor2.html">
             <header>
               <div class="logo row">
@@ -41,7 +41,7 @@
                 </div>
               </div>
           </header>
-            <btst-accordion id ="accordion">
+            <btst-accordion>
               <btst-pane class="contents" title="PERSONAL DETAILS">
                 <div class="f-s-20 p-b-10"><span><b>Class and Section </b> XI A</span><span class="p-l-30"><b>School </b> Gyan Bharati School</span></div>
                 <div class="f-s-20 p-b-10"><span><b>Roll Number </b> <span style="padding-left:53px">32</span></span><span class="p-l-46"><b>Email </b><span style="padding-left:15px"> shash@srijan.in</span></span></div>
@@ -93,6 +93,7 @@
                 </div>
                 
                 <span class="thumb-up" style="position:absolute;right:-120px">
+                <p class="error-tooltips" ng-show="myForm.career.$touched && myForm.career.$invalid"><span>Subjects</span>Search & Select subjects</p>
                   <img ng-show ="career" src="img/thumb-up.png" alt="Thumb up">
                 </span> 
               </div>
@@ -105,13 +106,14 @@
                 </div>
               <div class="row field thumb-align" style="position:relative">
                 <div class="col-12">
-                  <p class="label-text">Address of the center</p>
+                  <p class="label-text">Address</p>
                   <input type="text" name="address" ng-model="address" class="form-control m-b-20" value="" placeholder="Address" required>
                   <input type="text" class="form-control m-b-20" value="" placeholder="Location / Town">
                   <input type="text" class="form-control m-b-20 w49" value="" placeholder="City / District"><input type="text" class="form-control m-b-20 w49 fr" value="" placeholder="Pin Code">
                   <input type="text" class="form-control m-b-20 w49" value="" placeholder="Phone Number"><input type="text" class="form-control m-b-20 w49 fr" value="" placeholder="E-Mail ID">
                 </div>
                  <span class="thumb-up" style="position:absolute;right:-120px">
+                  <p class="error-tooltips" ng-show="myForm.address.$touched && myForm.address.$invalid"><span>Address</span>Enter address</p>
                   <img ng-show ="address" src="img/thumb-up.png" alt="Thumb up">
                 </span> 
               </div></div>
@@ -145,7 +147,7 @@
               <div class="row field thumb-align"  style="position:relative">
                <div class="col-12 radio-style">
                <p class="label-text" for="">Fees Amount</p>
-               <input type="text" ng-model="fee" class="feestructure" value="0.0">
+               <input type="text" ng-model="fee" class="feestructure" placeholder="0.0">
                </div>
                <span class="thumb-up" style="position:absolute;right:-120px">
                   <img ng-show ="fee" src="img/thumb-up.png" alt="Thumb up">
@@ -188,7 +190,7 @@
               
               <div class="row field">
               <div class="col-12">
-                  <a href ="tutor2.html" class="btn tutorbtn" value=''>SAVE & RATE YOUR TUTOR</a>
+                 <button class="btn tutorbtn1" value=''>SAVE & RATE YOUR TUTOR</button>
                 </div>
                 
                 </div>
@@ -197,7 +199,7 @@
               
               <div class="action">  
                 <!-- <button class="btn btn-primary">Continue</button> -->
-                <button class="btn2">Continue</button>
+                <button class="btn2" disabled="disabled">Continue</button>
               </div>
           
            

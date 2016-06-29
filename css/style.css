@@ -498,6 +498,7 @@ textarea{
 
 .btn1 {
   height: 50px;
+  /*width:120px;*/
   line-height: 50px;
   display: inline-block;
   padding: 0 24px;
@@ -507,9 +508,15 @@ textarea{
   font-size: 20px;
   color: #ffffff;
   border: none;
-  text-decoration: none;
+  /*text-decoration: none;*/
   text-align:center;
-  background-color: blue;
+  background-color: #01a4e7;
+ touch-action:manipulation;
+ cursor:pointer;
+ -webkit-user-select:none;
+ -moz-user-select:none;
+ -ms-user-select:none;
+ user-select:none
 }
 
 .btn2 {
@@ -521,11 +528,11 @@ textarea{
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
   font-size: 20px;
-  color: #95A0A5;
+  color: #95A0A5 !important;
   border: none;
   text-decoration: none;
   text-align:center;
-  background-color: #BCC5C9;
+  background-color: #BCC5C9 !important;
 }
 
 .bg-color{
@@ -1123,17 +1130,26 @@ img.ng-hide-remove {
   font-size:20px;
 }
 
-#firstStepTutor .tutorbtn {
+ .tutorbtn1 {
   background-color:#64bd8c;
   color:#FFFFFF;
-  height:30px;
-  width:260px;
-  font-size:20px;
-  padding-top:10px;
-  padding-right:20px; 
-  padding-left:15px;
+  height:45px;
+  width:280px;
+  font-size:19px !important;
+  padding-top:10px !important;
+  padding-right:20px !important; 
+  padding-left:15px !important;
 }
 
+#secondStepTutor .continue{
+  height: 35px;
+  line-height:35px;
+  width:120px;
+  background-color:#01a4e7;
+  color:#FFFFFF;
+  font-size:20px;
+  text-transform: uppercase;
+}
 #secondStepParent p .code {
   color: #0094cb;
   text-transform: uppercase;
@@ -1194,7 +1210,7 @@ img.ng-hide-remove {
     width:480px !important;
     margin-top: 3px !important;
 }
-#firstStepTutor .feestructure{
+.feestructure{
   width:98px !important;
 }
 #LikeAboutTutor textarea,
@@ -1256,9 +1272,6 @@ img.ng-hide-remove {
     padding-left: 15px !important;
     padding-right: 0 !important;
   }
-  #firstStepTutor .feestructure{
-    text-align:center;
-  }
   .morninglabel{
   padding-right: 25px !important;
  }
@@ -1286,7 +1299,7 @@ img.ng-hide-remove {
     width:680px !important;
     margin-top:5px !important;
 }
-#firstStepTutor .feestructure{
+.feestructure{
   width:141px !important;
 }
 #LikeAboutTutor textarea,
@@ -1346,9 +1359,8 @@ img.ng-hide-remove {
   .p-r-125{
     padding-right: 168px !important;
   }
-#firstStepTutor .feestructure{
+.feestructure{
   font-size:16px !important;
-  text-align:center;
 }
 .morninglabel{
   padding-right: 88px !important;
@@ -1374,7 +1386,7 @@ img.ng-hide-remove {
 
 
 
-#firstStepTutor .feestructure{
+.feestructure{
   width:148px;
   height:40px;
   margin-right:17px;

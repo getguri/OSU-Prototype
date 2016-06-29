@@ -13,6 +13,7 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/media.css">
         <link rel="stylesheet" href="css/easy-autocomplete.css">
@@ -22,7 +23,7 @@
     </head>
     <body ng-app= "myApp">
      <div class="container gray-bg" id="secondStepTutor">
-           <form name="myForm" action="tutor.html">
+           <form name="myForm" action="tutor3.html">
             <header>
               <div class="logo row">
               <div class="col-6">
@@ -40,7 +41,7 @@
                 </div>
               </div>
        </header>
-            <btst-accordion>
+            <btst-accordion id ="accordion">
               <btst-pane title="PERSONAL DETAILS">
                 <div class="f-s-20 p-b-10"><span><b>Class and Section </b> XI A</span><span class="p-l-30"><b>School </b> Gyan Bharati School</span></div>
                 <div class="f-s-20 p-b-10"><span><b>Roll Number </b> <span style="padding-left:53px">32</span></span><span class="p-l-46"><b>Email </b><span style="padding-left:15px"> shash@srijan.in</span></span></div>
@@ -52,10 +53,11 @@
                 <div></div>
               </btst-pane>
               </btst-accordion>
-             <div class="accordion-tutor tutor">  
+              <div ng-controller="myCtrl">
+             <div class="accordion-tutor tutor" ng-show="!settutor">  
             <div class="fields">  
               <div class="row field tutor-rating">
-                <div class="col-1" style="margin-right:30px">
+                <div class="col-1" style="margin-right:40px;margin-bottom:30px">
                    <label class="field headtext" for="">TUTOR</label> 
                 </div>
                 <div class="col-11">
@@ -146,9 +148,10 @@
               <div class="row field thumb-align" style="position:relative" id="LikeAboutTutor">
               <div class="col-12">
                 <label class="textlabel" for="">What do you like about your Tutor? <span class="star">*</span></label>
-                <textarea name="" id="" cols="30" rows="3" class="form-control" ng-model ="like" ></textarea>
-                <p class="error">Please write comment</p>  
+                <textarea name="like" id="" cols="30" rows="3" class="form-control" ng-model ="like" required></textarea>
+               <!--  <p class="error">Please write comment</p>   -->
               </div>  <span class="thumb-up" style="position:absolute;right:-120px">
+                  <p class="error-tooltips" ng-show="myForm.like.$touched && myForm.like.$invalid"><span>Likes</span>Enter likes about tutor</p> 
                   <img ng-show ="like" src="img/thumb-up.png" alt="Thumb up">
                 </span> 
               </div>
@@ -157,9 +160,10 @@
               <div class="row field thumb-align" style="position:relative" id="suggestyourtutor">
               <div class="col-12">
                 <label class="textlabel" for="">What improvements can you suggest your Tutor? <span class="star">*</span></label>
-                <textarea name="" id="" ng-model="suggest" cols="30" rows="3" class="form-control"></textarea>
-                <p class="error">Please write comment</p> 
+                <textarea id="" ng-model="suggest" name ="suggest" cols="30" rows="3" class="form-control" required></textarea>
+               <!--  <p class="error">Please write comment</p>  -->
               </div><span class="thumb-up" style="position:absolute;right:-120px">
+                  <p class="error-tooltips" ng-show="myForm.suggest.$touched && myForm.suggest.$invalid"><span>Suggestion</span>Enter suggestions</p> 
                   <img ng-show ="suggest" src="img/thumb-up.png" alt="Thumb up">
                 </span> 
               
@@ -219,17 +223,164 @@
               
                <div class="row field">
               <div class="col-12">
-            <!-- <i class =" fa fa-plus-circle"></i> --><button value='' id ="addAccordion" class="btn tutorbtn"><i class =" fa fa-plus-circle"></i>Add Another Tutor</button>
+            <!-- <i class =" fa fa-plus-circle"></i> --><button value='' id ="addAccordion" class="btn tutorbtn" ng-click="add()"><i class =" fa fa-plus-circle"></i>Add Another Tutor</button>
                 </div>
                 
                 </div>
               </div>
               </div>
-              
-              <div class="action">  
-                <!-- <button class="btn btn-primary">Continue</button> -->
-                <button class="btn1 btn-primary1">Continue</button>
+              <div class="accordion-tutor tutor" ng-show="settutor">
+            <div class="fields">
+            
+             <label class="field headtext"  style="display:block" for="">TUTOR</label>   
+              <div class="row field thumb-align" style="position:relative">
+             
+              <div class="col-3"> 
+              <label for="">Salutation<span class="star">*</span></label>
+              <select name="salutation" id="" class="form-control" required>
+                    <option disabled selected>--Select--</option>
+                    <option value="XI">Mr.</option>
+                    <option value="XII">Mrs.</option>
+                  </select>
               </div>
+                <div class="col-9"> 
+                               
+                  <label for="">Full Name<span class="star">*</span></label>
+                  <input type="text" class="form-control" id="name" name = "name" ng-model ="name" value="" placeholder="First and Last Name" required>
+                </div>
+                <span class="thumb-up" style="position:absolute;right:-120px">
+                <p class="error-tooltips" ng-show="myForm.name.$touched && myForm.name.$invalid"><span>Your name</span>Select salutation,Enter first & last name</p>
+                  <img ng-show ="name" src="img/thumb-up.png" alt="Thumb up">
+                </span>
+                
+              </div>
+              <div class="row field thumb-align">
+                <div class="col-12 radio-style">
+                  <p class="label-text">Type of course<span class="star">*</span></p>
+                <input type ="radio" ng-model ="course" name ="course" value= "full" ng-checked="true" id ="full"><label class="p-r-40 ipad" for="full"><span class="course"></span> Full Course</label><input type ="radio" name ="course"  ng-model ="course" value= "crash" id ="crash"><label class="p-r-75 ipad" for="crash" ><span class="course"></span>Crash Course </label><input type ="radio" name ="course" ng-model ="course" value = "problem" id ="solving"><label class="p-r-40 ipad" for="solving"><span class="course"></span> Problem Solving</label>
+                </div>               
+              </div>
+              <div class="row field thumb-align" style="position:relative">
+                <div class="col-12">
+                  <label for="careersInterestedInText">Subjects</label>
+                  <input type="text" class="form-control" name ="career" id="careersInterestedInText" placeholder="Search and select subjects" ng-model = "career" required>
+                  <ul class="interested-List" id="careersInterestedInAdded">
+                  </ul>
+                </div>
+                
+                <span class="thumb-up" style="position:absolute;right:-120px">
+                <p class="error-tooltips" ng-show="myForm.career.$touched && myForm.career.$invalid"><span>Subjects</span>Search & Select subjects</p>
+                  <img ng-show ="career" src="img/thumb-up.png" alt="Thumb up">
+                </span> 
+              </div>
+              <div class="row field">
+              <div class="col-12 radio-style">
+                 <p class="label-text">Where do you study?<span class="star">*</span></p>
+                  <input type ="radio" ng-model ="location" name ="location" value= "home" id ="home"> <label class="p-r-85" for="home"><span class="location"></span>Home</label><input type ="radio" ng-model ="location" name ="location" ng-checked="true" value= "center" id="center"><label for="center"><span class="location"></span> Center</label> 
+                </div>
+               
+                </div>
+              <div class="row field thumb-align" style="position:relative">
+                <div class="col-12">
+                  <p class="label-text">Address of the center</p>
+                  <input type="text" name="address" ng-model="address" class="form-control m-b-20" value="" placeholder="Address" required>
+                  <input type="text" class="form-control m-b-20" value="" placeholder="Location / Town">
+                  <input type="text" class="form-control m-b-20 w49" value="" placeholder="City / District"><input type="text" class="form-control m-b-20 w49 fr" value="" placeholder="Pin Code">
+                  <input type="text" class="form-control m-b-20 w49" value="" placeholder="Phone Number"><input type="text" class="form-control m-b-20 w49 fr" value="" placeholder="E-Mail ID">
+                </div>
+                 <span class="thumb-up" style="position:absolute;right:-120px">
+                  <p class="error-tooltips" ng-show="myForm.address.$touched && myForm.address.$invalid"><span>Address</span>Enter address</p>
+                  <img ng-show ="address" src="img/thumb-up.png" alt="Thumb up">
+                </span> 
+              </div>
+             
+              <div class="row field">
+              <div class="col-12 radio-style">
+                  <p class="label-text" for="">Number of Students who attend with me</p>
+                  <div class="p-b-30"><input type ="radio" name ="students"   id ="zero"><label class="ipadstudents" for="zero"><span class="students"></span> 0</label> <input type ="radio" name ="students"   id ="one" checked="true"><label class="ipadstudents" for="one"><span class="students"></span> 1-3 </label><input type ="radio" name ="students"  id ="four"><label class="ipadstudents" for="four"><span class="students"></span> 4-10</label></div>
+                  <div><input type ="radio" name ="students"   id ="ten"><label class="p-r-82 ipadstudents" for="ten"><span class="students"></span>10-15</label><input type ="radio" name ="students" id ="fifteen"><label class="ipadstudents" for="fifteen"><span class="students"></span>15+</label></div>
+              </div>
+               
+              </div>
+
+              <div class="row field">
+              <div class="col-12 radio-style">
+                  <p class="label-text" for="">Fees Structure</p>
+                  <div class="p-b-30"><input type ="radio" name ="fees" id ="hourly"><label for="hourly" class="p-r-80 ipadfees"><span class="fee"></span>Hourly</label> <input type ="radio" name ="fees" id ="weekly" checked="true"><label class="ipadfees" for="weekly" class="p-r-80"><span class="fee"></span>Weekly</label><input type ="radio" name ="fees"  id ="monthly"><label class="ipadfees" for="monthly" class="p-r-80"><span class="fee"></span>Monthly</label></div>
+                  <div><input type ="radio" name ="fees" id ="yearly"><label class="p-r-87 ipadfees" for="yearly"><span class="fee"></span>Yearly</label><input type ="radio" name ="fees" id ="percourse"><label class="ipadfees" for="percourse"><span class="fee"></span>Percourse</label></div>
+                </div>
+            
+              </div>
+               
+              
+              <div class="row field">
+              <div class="col-12 radio-style">
+              <div><input type="text" class="feestructure" id ="hours" value="Hours per day" disabled="disabled"><input type="text" class="feestructure" id ="week" value="No of day/week" disabled="disabled"><input type="text" class="feestructure" id ="month" value="Hours per month" disabled="disabled"><input type="text" class="feestructure" id="course" value="No of course" disabled="disabled"></div>
+              </div>
+              
+            
+              </div>
+              <div class="row field thumb-align"  style="position:relative">
+               <div class="col-12 radio-style">
+               <p class="label-text" for="">Fees Amount</p>
+               <input type="text" ng-model="fee" class="feestructure" placeholder="0.0">
+               </div>
+               <span class="thumb-up" style="position:absolute;right:-120px">
+                  <img ng-show ="fee" src="img/thumb-up.png" alt="Thumb up">
+                </span> 
+              
+              </div>
+
+              <div class="row field m-b-35">
+               <div class="col-12 radio-style">
+               <p class="label-text" for="">Class start time</p>
+              <input type ="radio" name ="time" id ="morning"><label class="morninglabel" for="morning"><span class="time"></span><span class="morning"></span><span class="m-l-30">Morning</span></label><input type ="radio" name ="time" id ="evening" checked="true"><label for="evening"><span class="time"></span><span class="evening"></span><span class="m-l-30">Evening</span></label>
+               </div>
+              
+              </div>
+
+
+              <div class="row field thumb-align m-b-60">
+               <div class="col-10">
+               <div id="time-range">
+                <div class="sliders_step1">
+                  <div id="slider-range"></div>
+                  </div><div id="scale" style="padding-top:15px;color:#000000;font-weight:700;font-size:13px"><span class="p-r-40">12</span><span class="p-r-45">1</span><span class="p-r-45">2</span><span class="p-r-45">3</span><span class="p-r-40">4</span><span class="p-r-45">5</span><span class="p-r-45">6</span><span class="p-r-40">7</span><span class="p-r-45">8</span><span class="p-r-40">9</span><span class="p-r-30">10</span><span>11</span></div></div></div>
+                   
+                  <div class="col-2">
+                   <input class="slider-time2">
+                  </div>
+                  
+                </div>
+                
+
+             
+              <div class="row field m-b-60">
+                <div class="col-12 radio-style ">
+                  <p class="label-text" for="">Duration of each class</p>
+                  <div class="p-b-30"><input type ="radio" name ="duration" id ="decimal"><label class="ipadstudents" for="decimal"><span class="class"></span>0.5</label> <input type ="radio" name ="duration"   id ="on" checked="true"><label class="ipadstudents"  for="on"><span class="class"></span>1.0</label><input type ="radio" name ="duration"  id ="one5"><label class="ipadstudents" for="one5"><span class="class"></span>1.5</label></div>
+                  <div><input type ="radio" name ="duration"   id ="to"><label class="p-r-125" for="to"><span class="class"></span>2</label><input type ="radio" name ="duration"   id ="two5"><label class="ipadstudents"  for="two5"><span class="class"></span>2.5+</label></div>
+                </div>              
+              
+              </div>
+              
+              <div class="row field">
+              <div class="col-12">
+                  <button class="btn tutorbtn1" value=''>SAVE & RATE YOUR TUTOR</button>
+                </div>
+                
+                </div>
+              </div>
+              </div>
+           
+              <div class="action" ng-show="settutor">  
+                <!-- <button class="btn btn-primary">Continue</button> -->
+                <button class="btn2" disabled="disabled">Continue</button>
+              </div>
+              <div class="action" ng-show="!settutor">  
+                <!-- <button class="btn btn-primary">Continue</button> -->
+                <a href ="tutor3.html" class="btn continue btn-primary1">Continue</a>
+              </div></div>
           
               
       </form>
