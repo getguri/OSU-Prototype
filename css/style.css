@@ -1142,13 +1142,15 @@ img.ng-hide-remove {
 }
 
 #secondStepTutor .continue{
-  height: 35px;
-  line-height:35px;
+  height: 50px;
+  line-height:50px;
   width:120px;
   background-color:#01a4e7;
   color:#FFFFFF;
   font-size:20px;
+  /*font-weight:700;*/
   text-transform: uppercase;
+  text-decoration:none;
 }
 #secondStepParent p .code {
   color: #0094cb;
