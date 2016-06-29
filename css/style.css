@@ -332,7 +332,7 @@ textarea{
 }
 
 .fields {
-    padding: 25px 15px 0;
+    padding: 15px 15px 0;
 }
 
 
@@ -476,7 +476,7 @@ textarea{
 }
 
 .interested-List li .count {
-    padding: 0 25px 0 42px;
+    padding: 0 25px 0 20px;
 }
 
 .interested-List li .close {
@@ -839,7 +839,7 @@ width:300px;
   background: url('../img/thumb-yes-green.png') center center no-repeat;
  }
  .radio-style input[type='radio']:checked + label span.no {
-  background: url('../img/thumb-no-green.png') center center no-repeat;
+  background: url('../img/thumb-no-red.png') center center no-repeat;
  } 
 
   
@@ -959,8 +959,12 @@ width:300px;
   color: rgb(0, 148, 203);
 }
 
-.radio-style input[type='radio']:checked +  label.thumb {
+.radio-style input[type='radio']:checked +  label.thumbyes {
   color: #64bd8c;
+}
+
+.radio-style input[type='radio']:checked +  label.thumb {
+  color: #fc8888;
 }
 
 
@@ -1013,7 +1017,7 @@ width:300px;
 }
 
 .tutor-rating  {
-  padding: 20px 0 25px;
+  padding: 0 0 25px;
   border-bottom: 2px solid #c3ceda;
 }
 .instructor-pro .text {
@@ -1123,7 +1127,7 @@ img.ng-hide-remove {
   font-weight: 700;
 }
 #secondStepTutor .tutorbtn {
-  background-color:#64bd8c;
+  background-color:#39b54a;
   color:#FFFFFF;
   height:41px;
   width:210px;
@@ -1131,7 +1135,7 @@ img.ng-hide-remove {
 }
 
  .tutorbtn1 {
-  background-color:#64bd8c !important;
+  background-color:#39b54a !important;
   color:#FFFFFF !important;
   height:45px !important;
   width:280px !important;
@@ -1529,9 +1533,17 @@ img.ng-hide-remove {
   color:#A1ACA9;
 }
 
+#secondStepTutor .fonthead{
+  font-weight:700;
+}
+
+#secondStepTutor .subjecthead{
+  font-weight:500;
+}
+
 #secondStepTutor .headline{
   color:#000000;
-  font-weight:700;
+  font-weight:600;
   margin-bottom:7px !important;
 }
 

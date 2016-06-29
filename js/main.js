@@ -174,7 +174,7 @@ $(document).ready(function(){
 			onChooseEvent: function() {
 				var value = $("#careersInterestedInText").getSelectedItemData().career;
 				var count = $('#careersInterestedInAdded > li').length +1;
-				$('#careersInterestedInAdded').append('<li class="row"><span class="pull-first"></span><span class="pull-second"></span> <span class="count">' + count + '</span><span class="text">' + value + '</span><span class="close"></span></li>');
+				$('#careersInterestedInAdded').append('<li class="row"><span class="count">' + count + '</span><span class="text">' + value + '</span><span class="close"></span></li>');
 			}
 		}
 	};
