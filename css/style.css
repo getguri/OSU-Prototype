@@ -1262,11 +1262,20 @@ img.ng-hide-remove {
     padding-right: 22px !important;
     
   }
+  #scale span.p-r-38{
+    padding-right: 26px !important;
+  }
   #scale span.p-r-40{
-    padding-right: 25px !important;
+    padding-right: 27px !important;
   }
   #scale span.p-r-45{
-    padding-right: 34px !important;
+    padding-right: 31px !important;
+  }
+  #scale span.p-r-43{
+    padding-right: 32px !important;
+  }
+  #scale span.p-r-44{
+    padding-right: 33px !important;
   }
   .p-r-30{
     padding-right: 17px !important;
@@ -1353,8 +1362,17 @@ img.ng-hide-remove {
     
   }
 
-  #scale span.p-r-40{
+  #scale span.p-r-38{
     padding-right: 38px !important;
+  }
+   #scale span.p-r-40{
+    padding-right: 40px !important;
+  }
+  #scale span.p-r-43{
+    padding-right: 43px !important;
+  }
+  #scale span.p-r-44{
+    padding-right: 44px !important;
   }
    #scale span.p-r-45{
     padding-right: 45px !important;
