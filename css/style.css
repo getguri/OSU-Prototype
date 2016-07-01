@@ -1179,6 +1179,23 @@ img.ng-hide-remove {
   min-height: 48px;
 }
 
+.errors-tooltips {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #ffffff;
+  padding: 15px 19px;
+  border-radius: 10px;
+  border: 1px solid rgb(195, 206, 218);
+  color: red;
+  font-size: 13px;
+  /*width: 200%;*/
+  box-sizing: border-box;
+  /*display: none;*/
+  margin: 0;
+  min-height: 48px;
+}
+
 .error-tooltips:before {
   content: '';
   position: absolute;
