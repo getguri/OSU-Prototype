@@ -1196,6 +1196,15 @@ img.ng-hide-remove {
   min-height: 48px;
 }
 
+.errors-tooltips:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 13px;
+  width: 12px;
+  height: 22px;
+  background: url('../img/tooltip-arrow.png') center center no-repeat;
+}
 .error-tooltips:before {
   content: '';
   position: absolute;
@@ -1204,6 +1213,17 @@ img.ng-hide-remove {
   width: 12px;
   height: 22px;
   background: url('../img/tooltip-arrow.png') center center no-repeat;
+}
+
+.errors-tooltips span{
+  padding-left: 25px;
+  background: url('../img/info.png') left center no-repeat;
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  color: #8a9db2;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .error-tooltips span{
